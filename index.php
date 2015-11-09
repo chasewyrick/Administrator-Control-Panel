@@ -9,7 +9,7 @@ require 'settings.php';
 	
 $username = mysqli_real_escape_string($_POST['user_name']);
 $password = mysqli_real_escape_string($_POST['password']);
-$hash = md5($salt . $password); 
+password_hash("$password", PASSWORD_DEFAULT);
 
 $result = mysqli_query("SELECT * FROM members WHERE username='" . $username . "' and password = '". $password."'");
 $row  = mysqli_fetch_array($result);
