@@ -61,6 +61,7 @@ CREATE TABLE IF NOT EXISTS `messages` (
 --
 
 -- --------------------------------------------------------# mysqli returned an empty result set (i.e. zero rows).
+
 ");
 ?>
 

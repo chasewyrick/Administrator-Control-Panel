@@ -11,13 +11,26 @@ $username = mysqli_real_escape_string($_POST['user_name']);
 $password = mysqli_real_escape_string($_POST['password']);
 $hash = md5($salt . $password); 
 
-$result = mysqli_query("SELECT * FROM members WHERE username='" . $uername . "' and password = '". $password."'");
+$result = mysqli_query("SELECT * FROM members WHERE username='" . $username . "' and password = '". $password."'");
 $row  = mysqli_fetch_array($result);
 if(is_array($row)) {
 $_SESSION["user_id"] = $row[id];
 $_SESSION["user_name"] = $row[username];
 } else {
 $message = "Invalid Username or Password!";
+if($message = "Invalid Username or Password!"){
+     if(isset($_COOKIE['login'])){
+          if($_COOKIE['login'] < 3){
+               $attempts = $_COOKIE['login'] + 1;
+               setcookie('login', $attempts, time()+60*5); 
+          } else{
+               $message = "Too many incorrect password attempts. Please try again in 5 minutes.";
+          }
+     } else{
+          setcookie('login', 1, time()+60*5);
+     }
+}
+?>
 }
 }
 if(isset($_SESSION["user_id"])) {
@@ -66,6 +79,7 @@ header("Location:dashboard.php");
                 <div class="login-panel panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">Sign In for Access To Secure Area</h3>
+						<h4><?php echo $message; ?></h4>
                     </div>
                     <div class="panel-body">
                         <form name="frmUser" method="post" action="">
