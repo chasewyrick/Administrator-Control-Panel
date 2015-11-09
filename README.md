@@ -1,4 +1,4 @@
-<h1>Administrator Control Panel </h1> <b>(Or simply put it Admin Dashboard) </b>
+<h1>Administrator Control Panel </h1> <b>(Or to simply put it... an Admin Dashboard) </b>
 <p>This is a project I created to give every developer a dashboard to use for their clients. <p>
 
 <b>Key Features: </b>
@@ -21,9 +21,9 @@
 
 2.	Open settings.php in edit mode and set each field as you wish. Then save it. Do not navigate to the panel via a web browser until this document is filled out. 
 Information regarding the salt field: 
-Make sure you change this. However after you create the datatables be sure not to change it or your passwords will no longer be recognized and you will need to reinstall the whole system.
+Make sure you change this. However after you create the data tables be sure not to change it or your passwords will no longer be recognized and you will need to re-install the whole system.
 
-3.	Navigate to {your website hostname}/admin/mysql.php - It will run and create the datatables
+3.	Navigate to {your website hostname}/admin/mysql.php - It will run and create the data tables
 
 4.	Then open {your website hostname}/admin/ and fix any errors. If there are none you can go and delete the MySQL.php file.
 
@@ -31,7 +31,7 @@ Make sure you change this. However after you create the datatables be sure not t
 
 6.  You will need to now go and change the passcode which can be done under the user tab on your dashboard.
 
-7.	Done. Enjoy your now fully working administration control panel.
+7.	Done. Enjoy your administration control panel.
 
 Your panel can be accessed like this: http://{your host name}/admin/
 
@@ -40,17 +40,17 @@ Your panel can be accessed like this: http://{your host name}/admin/
 
 <i>To get messages to function:</i>
 
-You will need to copy and paste some extra code. They are in the untilities folder.
+You will need to copy and paste some extra code. They are in the utilities folder.
 
-Firstly create a three template page in you website directoy under a messages directory with the file names index.php, reply.php, send.php. 
+Firstly create a three template page in your website directory under a messages directory with the file names index.php, reply.php, send.php. 
 
-Then copy and paste the corresponding part into the body section of your each page.
+Then copy and paste the corresponding part into the body section of your new page.
 
 Then go through the send.php section and modify the message as per your wishes.
 
 <i>To get page editing to work:</i>
-Copy and paste section one of the editing part in the code.php file to the top of the page you wish the edits to show.
-Then copy and paste section two to where you want the text to be displayed. And change the row name to that of the corrosponding collum in thr MySQL database. (See below how to add extra pages to edit)
+Copy and paste section one of the editing part in the code.php file to the top of the page you wish the edits to be displayed.
+Then copy and paste section two to where you want the text to be displayed. And change the row name to that of the corrosponding collum in the MySQL database. (See below how to add extra pages to edit)
 
 NOTE: Seeing I cannot see your page structures and which pages you have if you want to change fields or add more pages to edit there are a few steps to take. This is what to do:
 
