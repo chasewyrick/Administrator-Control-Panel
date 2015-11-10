@@ -61,7 +61,12 @@ CREATE TABLE IF NOT EXISTS `messages` (
 --
 
 -- --------------------------------------------------------# mysqli returned an empty result set (i.e. zero rows).
-
+CREATE TABLE `LoginAttempts` 
+(
+`IP` VARCHAR( 20 ) NOT NULL ,
+`Attempts` INT NOT NULL ,
+`LastLogin` DATETIME NOT NULL 
+)
 ");
 ?>
 
