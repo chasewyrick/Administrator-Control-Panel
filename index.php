@@ -9,11 +9,10 @@ require 'settings.php';
 	
 $username = mysqli_real_escape_string($_POST['user_name']);
 $password = mysqli_real_escape_string($_POST['password']);
-<<<<<<< HEAD
 $passwordsecure = password_hash("$password", PASSWORD_DEFAULT);
-=======
+
 password_hash("$password", PASSWORD_DEFAULT);
->>>>>>> origin/master
+
 
 
 $result = mysqli_query("SELECT * FROM members WHERE username='" . $username . "' and password = '". $passwordsecure."'");
@@ -33,6 +32,13 @@ if($message = "Invalid Username or Password!"){
           }
      } else{
           setcookie('login', 1, time()+60*5);
+	if(count($_COOKIE) > 0) {
+	   echo "";
+	} else {
+	    echo "Cookies are disabled. This website requires cookies to function.";
+	    die();
+}
+?>
      }
 }
 ?>
