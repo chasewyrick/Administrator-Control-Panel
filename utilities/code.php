@@ -87,12 +87,12 @@ mail("$administrationemail","New Message From Website",$msg);
 
 // change these things
 require '/admin/settings.php';
-mysql_connect($host, $mysql_user, $mysql_pass);
-mysql_select_db($db);
+mysqli_connect($host, $mysql_user, $mysql_pass);
+mysqli_select_db($db);
 
-$result = mysql_query("SELECT * FROM `homepage`");
+$result = mysqli_query("SELECT * FROM `homepage`");
 
-while($row = mysql_fetch_assoc($result)){
+while($row = mysqli_fetch_assoc($result)){
 ?>
 
 /* Section Two - This display the text on your website. However as of now you cannot edit the entire code. But that feature is comming soon */
