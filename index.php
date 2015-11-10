@@ -6,7 +6,23 @@ require 'settings.php';
 
 	mysqli_connect($host, $mysql_user, $mysql_pass);
 	mysqli_select_db($db);
-	
+	$attempts = mysqli_query("SELECT * FROM LoginAttempts WHERE IP='".$ip."');
+	$num_rows = mysqli_num_rows($attempts);
+	$ipaddress = $_SERVER["REMOTE_ADDR"];
+	if($num_rows = 3){
+	$timecheck = mysql_query("mysqli_query("SELECT * FROM LoginAttempts WHERE IP='".$ip."');
+	while($results = mysql_fetch_assoc($timecheck)){
+	$lastlogin = $row['name of section'];
+	$currenttime = date(hi);
+	$lastlogin + 10
+	if($lastlogin > $currenttime){
+	mysqli_query("DELETE * FROM LoginAttempts WHERE IP='".$ip."');	
+	}
+	if($num_rows = 3){
+		$locked = 'yes';
+	} else {
+		$locked = 'no';
+	}
 $username = mysqli_real_escape_string($_POST['user_name']);
 $password = mysqli_real_escape_string($_POST['password']);
 $passwordsecure = password_hash("$password", PASSWORD_DEFAULT);
@@ -23,26 +39,19 @@ $_SESSION["user_name"] = $row[username];
 } else {
 $message = "Invalid Username or Password!";
 if($message = "Invalid Username or Password!"){
-     if(isset($_COOKIE['login'])){
-          if($_COOKIE['login'] < 3){
-               $attempts = $_COOKIE['login'] + 1;
-               setcookie('login', $attempts, time()+60*5); 
-          } else{
-               $message = "Too many incorrect password attempts. Please try again in 5 minutes.";
-          }
-     } else{
-          setcookie('login', 1, time()+60*5);
-	if(count($_COOKIE) > 0) {
-	   echo "";
-	} else {
-	    echo "Cookies are disabled. This website requires cookies to function.";
-	    die();
-}
-?>
-     }
-}
-?>
-}
+	$attempts = mysqli_query("SELECT * FROM LoginAttempts WHERE IP='".$ip."');
+	$num_rows = mysqli_num_rows($attempts);
+	$ipaddress = $_SERVER["REMOTE_ADDR"];
+	if($num_rows = 1){
+		mysqli_query("UPDATE LoginAttemps SET attempts="2" WHERE ip = '$ipaddress'");
+	}
+	if($num_rows = 0){
+		mysqli_query("INSERT INTO LoginAttempts (attempts,IP,lastlogin) values (1, '$ipaddress', NOW())");
+	}
+	if($num_rows = 2){
+		mysqli_query("UPDATE LoginAttemps SET attempts="2" WHERE ip = '$ipaddress'");
+	}
+
 }
 if(isset($_SESSION["user_id"])) {
 header("Location:dashboard.php");
@@ -89,7 +98,10 @@ header("Location:dashboard.php");
             <div class="col-md-4 col-md-offset-4">
                 <div class="login-panel panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Sign In for Access To Secure Area</h3>
+                    	<?php
+                    	if($locked = 'no'){
+                    	?>
+                    		<h3 class="panel-title">Sign In for Access To Secure Area</h3>
 						<h4><?php echo $message; ?></h4>
                     </div>
                     <div class="panel-body">
@@ -104,6 +116,12 @@ header("Location:dashboard.php");
                                 <input type="submit" name="submit" value="Submit" class="btn btn-success btn-lg btn-block">
                             </fieldset>
                         </form>
+                        <?php
+                        if($locked = 'yes'){
+                        echo "Sorry you are locked out of the system. Please try again in";
+                        echo $timeleft;
+                    	}
+                        
                     </div>
                 </div>
             </div>
