@@ -8,7 +8,7 @@ $catchphrase=addslashes($_POST['content']);
 $aim=addslashes($_POST['title']);  
       if(isset($_POST['submit'])) {
 require '/admin/settings.php';
-	mysqli_connect($host, $user, $pass);
+	mysqli_connect($host, $mysql_user, $mysql_pass);
 	mysqli_select_db($db);
 mysqli_query("UPDATE `homepage` SET title='$title', content='$content', aim='$aim' WHERE id=1"); 
 	

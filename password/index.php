@@ -9,7 +9,7 @@ if($_SESSION["user_name"]) {
  if(count($_POST)>0) {
 	 
  require '/admin/settings.php';
- $conn = mysqli_connect("$host, $user, $pass");
+ $conn = mysqli_connect("$host, $mysql_user, $mysql_pass");
  mysqli_select_db("$db");
 $username = mysqli_real_escape_string($_POST['user_name']);
 $password = mysqli_real_escape_string($_POST['password']);

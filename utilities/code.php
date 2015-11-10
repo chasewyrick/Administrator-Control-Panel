@@ -9,7 +9,7 @@ $message=addslashes($_POST['message']);
 $date=date(r);
       if(isset($_POST['submit'])) {
       require '/admin/settings.php';
-	mysqli_connect($host, $user, $pass);
+	mysqli_connect($host, $mysql_user, $mysql_pass);
 	mysqli_select_db($db);
 mysqli_query("INSERT INTO `messages` (`name`, `message`, `email`, `date`) VALUES ('$name', '$message', '$email', '$date')"); 
 	// the message which you can change to anything.
@@ -87,7 +87,7 @@ mail("$administrationemail","New Message From Website",$msg);
 
 // change these things
 require '/admin/settings.php';
-mysql_connect($host, $user, $pass);
+mysql_connect($host, $mysql_user, $mysql_pass);
 mysql_select_db($db);
 
 $result = mysql_query("SELECT * FROM `homepage`");

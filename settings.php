@@ -1,7 +1,7 @@
 <?php
 $host = 'hostname';
-$user = 'username';
-$pass = 'password';
+$mysql_user = 'username';
+$mysql_pass = 'password';
 $db = 'database';
 $salt = '1diI9sd$ds*72' /* This can be anything. This defines the salt used in the hashing of the passcode. However make sure you change it.*/
 $root = 'root address'; /* This is your website address. Eg: http://laughingquoll.net */

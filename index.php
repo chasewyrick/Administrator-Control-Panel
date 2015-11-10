@@ -4,14 +4,15 @@ $message="";
 if(count($_POST)>0) {
 require 'settings.php';
 
-	mysqli_connect($host, $user, $pass);
+	mysqli_connect($host, $mysql_user, $mysql_pass);
 	mysqli_select_db($db);
 	
 $username = mysqli_real_escape_string($_POST['user_name']);
 $password = mysqli_real_escape_string($_POST['password']);
-$hash = md5($salt . $password); 
+$passwordsecure = password_hash("$password", PASSWORD_DEFAULT);
 
-$result = mysqli_query("SELECT * FROM members WHERE username='" . $username . "' and password = '". $password."'");
+
+$result = mysqli_query("SELECT * FROM members WHERE username='" . $username . "' and password = '". $passwordsecure."'");
 $row  = mysqli_fetch_array($result);
 if(is_array($row)) {
 $_SESSION["user_id"] = $row[id];

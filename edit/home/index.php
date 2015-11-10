@@ -84,7 +84,7 @@ require '/admin/settings.php';
 
 // change these things
 require '/admin/settings.php';
-mysqli_connect($host, $user, $pass);
+mysqli_connect($host, $mysql_user, $mysql_pass);
 mysqli_select_db($db);
 
 $result = mysqli_query("SELECT * FROM `homepage`");
