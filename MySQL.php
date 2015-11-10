@@ -2,7 +2,7 @@
 require 'settings.php';
 	mysqli_connect($host, $mysql_user, $mysql_pass);
 	mysqli_select_db($db);
-	$password = md5($salt . 'password');
+	password_hash("password", PASSWORD_DEFAULT)."\n";
 	mysqli_query("
 -- --------------------------------------------------------
 
