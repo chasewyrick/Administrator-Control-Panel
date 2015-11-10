@@ -9,16 +9,17 @@ require 'settings.php';
 	$attempts = mysqli_query("SELECT * FROM LoginAttempts WHERE IP='".$ip."');
 	$num_rows = mysqli_num_rows($attempts);
 	$ipaddress = $_SERVER["REMOTE_ADDR"];
-	if($num_rows = 3){
-	$timecheck = mysql_query("mysqli_query("SELECT * FROM LoginAttempts WHERE IP='".$ip."');
-	while($results = mysql_fetch_assoc($timecheck)){
-	$lastlogin = $row['name of section'];
+	$timecheck = mysqli_query("mysqli_query("SELECT * FROM LoginAttempts WHERE IP='".$ip."');
+	while($timecheck = mysqli_fetch_assoc($timecheck)){
+	
+	$lastlogin = $row['LastLogin'];
 	$currenttime = date(hi);
 	$lastlogin + 10
 	if($lastlogin > $currenttime){
 	mysqli_query("DELETE * FROM LoginAttempts WHERE IP='".$ip."');	
 	}
-	if($num_rows = 3){
+	mysqli_query("mysqli_query("SELECT * FROM LoginAttempts WHERE IP='".$ip."');
+	if($attempt = 3){
 		$locked = 'yes';
 	} else {
 		$locked = 'no';
