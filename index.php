@@ -1,17 +1,13 @@
 <?php
 session_start();
 $message="";
-if(count($_POST)>0) {
 require 'settings.php';
-
-	mysqli_connect($host, $mysql_user, $mysql_pass);
+mysqli_connect($host, $mysql_user, $mysql_pass);
 	mysqli_select_db($db);
-	$attempts = mysqli_query("SELECT * FROM LoginAttempts WHERE IP='".$ip."');
-	$num_rows = mysqli_num_rows($attempts);
 	$ipaddress = $_SERVER["REMOTE_ADDR"];
-	$timecheck = mysqli_query("mysqli_query("SELECT * FROM LoginAttempts WHERE IP='".$ip."');
-	while($timecheck = mysqli_fetch_assoc($timecheck)){
-	
+	$attemptcheck = mysqli_query("mysqli_query("SELECT * FROM LoginAttempts WHERE IP='".$ipaddress."');
+	while($attemptcheck = mysqli_fetch_assoc($attemptcheck)){
+	$attemptamount = $row['Attempts'];
 	$lastlogin = $row['LastLogin'];
 	$currenttime = date(hi);
 	$lastlogin + 10
@@ -24,6 +20,9 @@ require 'settings.php';
 	} else {
 		$locked = 'no';
 	}
+if(count($_POST)>0) {
+
+	
 $username = mysqli_real_escape_string($_POST['user_name']);
 $password = mysqli_real_escape_string($_POST['password']);
 $passwordsecure = password_hash("$password", PASSWORD_DEFAULT);
@@ -50,7 +49,7 @@ if($message = "Invalid Username or Password!"){
 		mysqli_query("INSERT INTO LoginAttempts (attempts,IP,lastlogin) values (1, '$ipaddress', NOW())");
 	}
 	if($num_rows = 2){
-		mysqli_query("UPDATE LoginAttemps SET attempts="2" WHERE ip = '$ipaddress'");
+		mysqli_query("UPDATE LoginAttemps SET attempts="3" WHERE ip = '$ipaddress'");
 	}
 
 }
