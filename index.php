@@ -5,20 +5,21 @@ require 'settings.php';
 mysqli_connect($host, $mysql_user, $mysql_pass);
 	mysqli_select_db($db);
 	$ipaddress = $_SERVER["REMOTE_ADDR"];
-	$attemptcheck = mysqli_query("mysqli_query("SELECT * FROM LoginAttempts WHERE IP='".$ipaddress."');
+	$attemptcheck = mysqli_query("SELECT * FROM LoginAttempts WHERE IP='".$ipaddress."'");
 	while($attemptcheck = mysqli_fetch_assoc($attemptcheck)){
 	$attemptamount = $row['Attempts'];
 	$lastlogin = $row['LastLogin'];
-	$currenttime = date(hi);
-	$lastlogin + 10
-	if($lastlogin > $currenttime){
-	mysqli_query("DELETE * FROM LoginAttempts WHERE IP='".$ip."');	
 	}
-	mysqli_query("mysqli_query("SELECT * FROM LoginAttempts WHERE IP='".$ip."');
-	if($attempt = 3){
-		$locked = 'yes';
+	$currenttime = date(hi);
+	$lastlogin + 10;
+	if($lastlogin > $currenttime){
+	mysqli_query("DELETE * FROM LoginAttempts WHERE IP='".$ip."'");	
+	}
+	mysqli_query("SELECT * FROM LoginAttempts WHERE IP='".$ip."'");
+	if($attempt == 3){
+		$locked == 'yes';
 	} else {
-		$locked = 'no';
+		$locked == 'no';
 	}
 if(count($_POST)>0) {
 
@@ -26,35 +27,34 @@ if(count($_POST)>0) {
 $username = mysqli_real_escape_string($_POST['user_name']);
 $password = mysqli_real_escape_string($_POST['password']);
 $passwordsecure = password_hash("$password", PASSWORD_DEFAULT);
-
 password_hash("$password", PASSWORD_DEFAULT);
-
-
 
 $result = mysqli_query("SELECT * FROM members WHERE username='" . $username . "' and password = '". $passwordsecure."'");
 $row  = mysqli_fetch_array($result);
 if(is_array($row)) {
 $_SESSION["user_id"] = $row[id];
-$_SESSION["user_name"] = $row[username];
+$_SESSION["user_name"] = $row[username]; 
 } else {
 $message = "Invalid Username or Password!";
-if($message = "Invalid Username or Password!"){
-	$attempts = mysqli_query("SELECT * FROM LoginAttempts WHERE IP='".$ip."');
+}
+if($message == "Invalid Username or Password!"){
+	$attempts = mysqli_query("SELECT * FROM LoginAttempts WHERE IP='".$ip."'");
 	$num_rows = mysqli_num_rows($attempts);
 	$ipaddress = $_SERVER["REMOTE_ADDR"];
-	if($num_rows = 1){
-		mysqli_query("UPDATE LoginAttemps SET attempts="2" WHERE ip = '$ipaddress'");
+	if($num_rows == 1){
+		mysqli_query("UPDATE LoginAttemps SET attempts='2' WHERE ip = '$ipaddress'");
 	}
-	if($num_rows = 0){
+	if($num_rows == 0){
 		mysqli_query("INSERT INTO LoginAttempts (attempts,IP,lastlogin) values (1, '$ipaddress', NOW())");
 	}
-	if($num_rows = 2){
-		mysqli_query("UPDATE LoginAttemps SET attempts="3" WHERE ip = '$ipaddress'");
+	if($num_rows == 2){
+		mysqli_query("UPDATE LoginAttemps SET attempts='3' WHERE ip = '$ipaddress'");
 	}
 
 }
 if(isset($_SESSION["user_id"])) {
 header("Location:dashboard.php");
+}
 }
 ?>
 <!DOCTYPE html>
@@ -99,7 +99,8 @@ header("Location:dashboard.php");
                 <div class="login-panel panel panel-default">
                     <div class="panel-heading">
                     	<?php
-                    	if($locked = 'no'){
+                    	if($locked == 'no'){
+						}
                     	?>
                     		<h3 class="panel-title">Sign In for Access To Secure Area</h3>
 						<h4><?php echo $message; ?></h4>
@@ -117,11 +118,11 @@ header("Location:dashboard.php");
                             </fieldset>
                         </form>
                         <?php
-                        if($locked = 'yes'){
+                        if($locked == 'yes'){
                         echo "Sorry you are locked out of the system. Please try again in";
                         echo $timeleft;
                     	}
-                        
+                        ?>
                     </div>
                 </div>
             </div>
