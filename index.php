@@ -53,6 +53,7 @@ if($message == "Invalid Username or Password!"){
 
 }
 if(isset($_SESSION["user_id"])) {
+mysqli_query("DELETE * FROM LoginAttempts WHERE IP='".$ip."'");	
 header("Location:dashboard.php");
 }
 }
