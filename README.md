@@ -91,10 +91,3 @@ NOTE: I am continually changing things on this repo. When I feel a release is in
 Version: 2.5.0 Pre-Release 1
 
 If there are any issues please email me: me@laughingquoll.net
-
-Changelog:
-2.4.5:
-Updated defunkt MySQL codes. Now running MySQLi
-2.4.4
-Added a unified settings file. Cleaned up code.
-Also fixed an issue where login page would allow any password.	
