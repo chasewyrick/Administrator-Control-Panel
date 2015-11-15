@@ -1,9 +1,0 @@
-[15-Nov-2015 09:57:40 Europe/Moscow] PHP Warning:  require(../settings.php): failed to open stream: No such file or directory in /home/laughin1/public_html/admin/edit/home/index.php on line 62
-[15-Nov-2015 09:57:40 Europe/Moscow] PHP Warning:  require(../settings.php): failed to open stream: No such file or directory in /home/laughin1/public_html/admin/edit/home/index.php on line 62
-[15-Nov-2015 09:57:40 Europe/Moscow] PHP Fatal error:  require(): Failed opening required '../settings.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/laughin1/public_html/admin/edit/home/index.php on line 62
-[15-Nov-2015 10:01:48 Europe/Moscow] PHP Warning:  mysqli_select_db() expects exactly 2 parameters, 1 given in /home/laughin1/public_html/admin/edit/home/index.php on line 87
-[15-Nov-2015 10:01:48 Europe/Moscow] PHP Warning:  mysqli_query() expects at least 2 parameters, 1 given in /home/laughin1/public_html/admin/edit/home/index.php on line 89
-[15-Nov-2015 10:01:48 Europe/Moscow] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/laughin1/public_html/admin/edit/home/index.php on line 91
-[15-Nov-2015 10:02:43 Europe/Moscow] PHP Warning:  mysqli_query() expects at least 2 parameters, 1 given in /home/laughin1/public_html/admin/edit/home/index.php on line 89
-[15-Nov-2015 10:02:43 Europe/Moscow] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/laughin1/public_html/admin/edit/home/index.php on line 91
-[15-Nov-2015 10:05:00 Europe/Moscow] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/laughin1/public_html/admin/edit/home/index.php on line 104

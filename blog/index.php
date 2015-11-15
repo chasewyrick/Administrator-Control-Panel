@@ -65,6 +65,7 @@ require '../settings.php';
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">Blog Management</h1>
+					<a href="new.php">New Post</a>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
