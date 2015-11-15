@@ -112,7 +112,7 @@ $conn->close();
                 <!-- /.col-lg-6 -->
             </div>
             <!-- /.row -->
-           <?php require '//admin/footer.php'; ?>
+           <?php require '../footer.php'; ?>
         </div>
         <!-- /#page-wrapper -->
     </div>

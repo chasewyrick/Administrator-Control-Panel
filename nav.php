@@ -88,6 +88,9 @@
                         <li>
                         <a href="/messages"><i class="fa fa-envelope fa-fw"></i> Messages</a>
                         </li>
+                        <li>
+                        <a href="/blog"><i class="fa fa-comment fa-fw"></i> Blog</a>
+                        </li>
                     </ul>
                 </div>
             </div>

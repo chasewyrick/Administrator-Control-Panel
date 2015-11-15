@@ -59,11 +59,11 @@ if($_SESSION["user_name"]) {
 <body>
 <?php 
 
-require '../settings.php';
+require '../../settings.php';
 
 ?>
     
-	<?php require '../nav.php'; ?>
+	<?php require '../../nav.php'; ?>
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
@@ -83,11 +83,10 @@ require '../settings.php';
    <?php
 
 // change these things
-require '../settings.php';
-mysqli_connect($host, $mysql_user, $mysql_pass);
-mysqli_select_db($db);
+$link = mysqli_connect($host, $mysql_user, $mysql_pass);
+mysqli_select_db($link, $db);
 
-$result = mysqli_query("SELECT * FROM `homepage`");
+$result = mysqli_query($link, "SELECT * FROM `homepage`");
 
 while($row = mysqli_fetch_assoc($result)){
 ?>
@@ -101,10 +100,11 @@ while($row = mysqli_fetch_assoc($result)){
 
 <div>
 <label for="content">Content</label>
-<textarea value="" class="form-control" type="text" rows="5" size="1000" name = "content"><?php
-    echo "".$row['content'].""; ?><textarea>
+<textarea value="" class="form-control" type="text" size="300" name = "content"><?php
+    echo "".$row['content'].""; ?></textarea>
 </div>
 <br>
+
 <input class="btn btn-primary" value="Update"/>
 </form>
 </div>
@@ -116,7 +116,7 @@ while($row = mysqli_fetch_assoc($result)){
                 <!-- /.col-lg-6 -->
             </div>
             <!-- /.row -->
-           <?php require '../footer.php'; ?>
+           <?php require '../../footer.php'; ?>
         </div>
         <!-- /#page-wrapper -->
     </div>
