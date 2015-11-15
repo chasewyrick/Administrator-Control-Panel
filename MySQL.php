@@ -1,9 +1,10 @@
 <?php
 require 'settings.php';
-	mysqli_connect($host, $mysql_user, $mysql_pass);
-	mysqli_select_db($db);
-	password_hash("password", PASSWORD_DEFAULT)."\n";
-	mysqli_query("
+	mysql_connect($host, $mysql_user, $mysql_pass);
+	mysql_select_db($db);
+	$password = password_hash("password", PASSWORD_DEFAULT);
+	echo $password;
+	mysql_query("
 -- --------------------------------------------------------
 
 --

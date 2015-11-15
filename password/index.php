@@ -6,28 +6,32 @@ if($_SESSION["user_name"]) {
  <?php
  session_start();
  $message="";
+ 
+ include'../settings.php';
  if(count($_POST)>0) {
 	 
- require '/admin/settings.php';
- $conn = mysqli_connect("$host, $mysql_user, $mysql_pass");
- mysqli_select_db("$db");
-$username = mysqli_real_escape_string($_POST['user_name']);
-$password = mysqli_real_escape_string($_POST['password']);
-$currentpassword = mysqli_real_escape_string($_POST['currentpassword']);
-$hash = md5($salt . $currentpassword); 
-$hash = md5($salt . $password); 
- $result = mysqli_query("SELECT * FROM members WHERE username='" . $username . "' and password = '". $currentpassword."'");
- $row  = mysqli_fetch_array($result);
- if(is_array($row)) {
- $sql = "UPDATE members SET `password` = '". $password ."' WHERE `members`.`id` = 1;";
- $result = mysqli_query($sql);
- mysqli_fetch_array($result);
+	$link = mysqli_connect($host, $mysql_user, $mysql_pass);
+	mysqli_select_db($link, $db);
+$password = mysqli_real_escape_string($link, trim($_POST['password']));
+$newpassword = mysqli_real_escape_string($link, trim($_POST['newpassword']));
+$hashnewpass = password_hash($newpassword, PASSWORD_BCRYPT);
+$result = mysqli_query($link, "SELECT * FROM members WHERE username='" . $_SESSION["user_name"] . "'");
+$row = mysqli_fetch_array($result);
+if(is_array($row)) {
+$hash = $row['password'];
+$passwordcheck = password_verify($password, $hash);
+} 
+if($hash == $passwordcheck){
+ $sql = "UPDATE members SET `password` = '". $hashnewpass ."' WHERE `members`.`id` = 1;";
+ $result = mysqli_query($link, $sql);
+ mysqli_fetch_array($link, $result);
  $message = "<div class='alert alert-success' role='alert'><span class='glyphicon glyphicon-saved' aria-hidden='true'></span> Password Changed Successfully</div>";
  } else {
  $message = "<div class='alert alert-danger' role='alert'><span class='glyphicon glyphicon-exclamation-sign' aria-hidden='true'></span> Invalid Password</div>";
  }
- }
- ?>
+
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -68,8 +72,8 @@ $hash = md5($salt . $password);
 
 </head>
 
-<script src="http:ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-<script src="http:cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 <script>
 paste this code under head tag or in a seperate js file.
 	 Wait for window load
@@ -79,13 +83,11 @@ paste this code under head tag or in a seperate js file.
 	});
 </script>
 
-
-<div class="se-pre-con"></div>
 <body>
 
     <div id="wrapper">
      
-<?php require ''.$root.'/admin/nav.php'; ?>
+<?php include'../nav.php'; ?>
 
         <div id="page-wrapper">
             <div class="row">
@@ -106,15 +108,15 @@ paste this code under head tag or in a seperate js file.
                         <h3 class="panel-title">Change Password</h3>
                     </div>
                     <div class="panel-body">
-                        <form name="frmUser" method="" action="">
+                        <form name="frmUser" method="post" action="">
                             <fieldset>
                                                             <div class="form-group">
-                                    <input class="form-control" placeholder="Old Password" name="currentpassword" type="password" value="">
+                                    <input class="form-control" placeholder="Old Password" name="password" type="password" value="">
                                 </div>
                                       <div class="form-group">
-                                    <input class="form-control" placeholder="New Password" name="password" type="password" value="">
+                                    <input class="form-control" placeholder="New Password" name="newpassword" type="password" value="">
                                 </div>
-                                <input value="submit" class="btn btn-success btn-lg btn-block">
+                                <input type="submit" name="submit" value="Submit" class="btn btn-success btn-lg btn-block">
                             </fieldset>
                         </form>
                     </div>
@@ -122,7 +124,7 @@ paste this code under head tag or in a seperate js file.
             </div>
         </div>
             <!-- /.row -->
-           <?php require ''.$root.'/admin/footer.php'; ?>
+           <?php include'../footer.php'; ?>
         </div>
         <!-- /#page-wrapper -->
     </div>

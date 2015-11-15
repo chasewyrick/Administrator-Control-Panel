@@ -62,7 +62,7 @@ if($_SESSION["user_name"]) {
 
     <div id="wrapper">
 
-<?php require ''.$root.'/admin/nav.php'; ?>
+<?php require '/home/laughin1/public_html/admin/nav.php'; ?>
 
 
         <div id="page-wrapper">
@@ -90,7 +90,7 @@ if($_SESSION["user_name"]) {
                 <!-- /.col-lg-6 -->
             </div>
             <!-- /.row -->
-            <?php include ''.$root.'/admin/footer.php'; ?>
+            <?php include '/home/laughin1/public_html/admin/footer.php'; ?>
         </div>
         <!-- /#page-wrapper -->
     </div>

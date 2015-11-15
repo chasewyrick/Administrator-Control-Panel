@@ -49,7 +49,6 @@ Then copy and paste the corresponding part into the body section of your new pag
 Then go through the send.php section and modify the message as per your wishes.
 
 <i>To get page editing to work:</i>
-
 Copy and paste section one of the editing part in the code.php file to the top of the page you wish the edits to be displayed.
 Then copy and paste section two to where you want the text to be displayed. And change the row name to that of the corrosponding collum in the MySQL database. (See below how to add extra pages to edit)
 
@@ -91,3 +90,10 @@ NOTE: I am continually changing things on this repo. When I feel a release is in
 Version: 2.5.0 Pre-Release 1
 
 If there are any issues please email me: me@laughingquoll.net
+
+Changelog:
+2.4.5:
+Updated defunkt MySQL codes. Now running MySQLi
+2.4.4
+Added a unified settings file. Cleaned up code.
+Also fixed an issue where login page would allow any password.	
