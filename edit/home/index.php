@@ -59,11 +59,11 @@ if($_SESSION["user_name"]) {
 <body>
 <?php 
 
-require '/admin/settings.php';
+require '../settings.php';
 
 ?>
     
-	<?php require ''.$root.'/admin/nav.php'; ?>
+	<?php require '../nav.php'; ?>
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
@@ -83,7 +83,7 @@ require '/admin/settings.php';
    <?php
 
 // change these things
-require '/admin/settings.php';
+require '../settings.php';
 mysqli_connect($host, $mysql_user, $mysql_pass);
 mysqli_select_db($db);
 
@@ -116,7 +116,7 @@ while($row = mysqli_fetch_assoc($result)){
                 <!-- /.col-lg-6 -->
             </div>
             <!-- /.row -->
-           <?php require ''.$root.'/admin/footer.php'; ?>
+           <?php require '../footer.php'; ?>
         </div>
         <!-- /#page-wrapper -->
     </div>

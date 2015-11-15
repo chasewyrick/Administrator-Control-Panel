@@ -1,6 +1,6 @@
 <?php
 
-	<?php require '/admin/settings.php'; ?>
+	<?php require '../settings.php'; ?>
 /* Check all form inputs using check_input function */
 $name= check_input($_POST['name'], "Enter your name");
 $email= check_input($_POST['email']);

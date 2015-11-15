@@ -3,7 +3,7 @@ session_start();
 
 if($_SESSION["user_name"]) {
 	
-require '/admin/settings.php';
+require '../settings.php';
 
 ?>
 <!DOCTYPE html>
@@ -62,7 +62,7 @@ require '/admin/settings.php';
 <body>
 
     <div id="wrapper">
-       <?php require ''.$root.'/admin/nav.php'; ?>
+       <?php require '../nav.php'; ?>
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
@@ -101,7 +101,7 @@ $conn->close();
                 <!-- /.col-lg-6 -->
             </div>
             <!-- /.row -->
-           <?php require ''.$root.'/admin/footer.php'; ?>
+           <?php require '../footer.php'; ?>
         </div>
         <!-- /#page-wrapper -->
     </div>
