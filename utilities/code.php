@@ -100,3 +100,24 @@ while($row = mysqli_fetch_assoc($result)){
 <?php
 echo "".$row['name of section']."";
 ?>
+
+/* Blog Page: - Paste this where you want blog posts to go.*/
+ <?php
+// Create connection
+$conn = new mysqli($host, $mysql_user, $mysql_pass, $db);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+$sql = "SELECT * FROM  `blog` ORDER BY `id` DESC";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "<div class='panel panel-default'><div class='panel-heading'><h3 class='panel-title'>" . $row["title"]. "</h3></div><div class='panel-body'>" . $row["post"]. "</div><div class='panel-footer'>" . $row["date"]. "</div></div>";
+    }
+} else {
+    echo "No Blog Posts :(";
+}
+$conn->close();
+?>
