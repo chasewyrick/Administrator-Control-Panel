@@ -7,7 +7,7 @@
 
 2. Messaging system. 
 
-3. Upload files to a specific directory. - In the works.
+3. Upload files to a specific directory.
 
 4. Change password.
 
