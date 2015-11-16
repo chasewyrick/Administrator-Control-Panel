@@ -3,21 +3,24 @@ session_start();
 if($_SESSION["user_name"]) {
 	
 require '../settings.php';
+
 if(count($_POST)>0) {
+
 $title=addslashes($_POST['title']);
-$post=addslashes($_POST['post']); 
+$post= $_POST['post']; 
 $author=addslashes($_POST['author']);
 $date=date(r);
-
-      require '../settings.php';
-	mysqli_connect($host, $mysql_user, $mysql_pass);
-	mysqli_select_db($db);
-mysqli_query("INSERT INTO `blog` (`id`, `title`, `post`, `date`, `author`) VALUES ('$title', '$post', '$date', '$author')"); 
+	$link = mysqli_connect($host, $mysql_user, $mysql_pass);
+	mysqli_select_db($link, $db);
+        
+	mysqli_query($link, "INSERT INTO `blog` (`id`, `title`, `post`, `date`, `author`) VALUES ('', '$title', '$post', '$date', '$author')"); 
+       
+       $message = 'Congratulations, You blog post is now live.';
  } else {
- Print "Something went wrong please go back!";
+ echo "";
  }
  
- ?>
+ 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -78,20 +81,20 @@ mysqli_query("INSERT INTO `blog` (`id`, `title`, `post`, `date`, `author`) VALUE
        <?php require '../nav.php'; ?>
         <div id="page-wrapper">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Blog Management</h1>
-					<a href="new.php">New Post</a>
+                <div class="col-lg-10">
+                    <h1 class="page-header">Blog Management <a class="btn btn-default pull-right" href="./">Back</a></h1>
+                    <p> <?php echo $message; ?>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-6">
                     <form action="" method="post">
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="title">Title</label>  
-  <div class="col-md-4">
+  <label class="col-md-12 control-label" for="title">Title</label>  
+  <div class="col-md-12">
   <input id="title" name="title" type="text" placeholder="A good title always works!" class="form-control input-md" required="">
   <span class="help-block">Create a nice title ideally 10 to 50 characters long. </span>  
   </div>
@@ -99,32 +102,43 @@ mysqli_query("INSERT INTO `blog` (`id`, `title`, `post`, `date`, `author`) VALUE
 
 <!-- Textarea -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="post">Blog Post Content</label>
-  <div class="col-md-4">                     
-    <textarea class="form-control" id="post" name="post">Just a nice little blog post to tell people about Bananas!</textarea>
+  <label class="col-md-12 control-label" for="post">Blog Post Content</label>
+  <div class="col-md-12">                     
+    <textarea class="form-control" id="post" name="post" rows = "9">Just a nice little blog post to tell people about Bananas!</textarea>
+    
   </div>
 </div>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="author">Author</label>  
-  <div class="col-md-4">
+  <label class="col-md-12 control-label" for="author">Author</label>  
+  <div class="col-md-12">
   <input id="author" name="author" type="text" placeholder="Banana Man!" class="form-control input-md">
   <span class="help-block">Who made this post?</span>  
   </div>
 </div>
 
-<!-- Button -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="submit">Create the post!</label>
-  <div class="col-md-4">
-    <input id="submit" name="submit" class="btn btn-primary">Post!</input>
+ <input type="submit" name="submit" value="Submit" class="btn btn-success btn-lg btn-block">
+                            </fieldset>
+                        </form>
+                    </div>
+
+		
+                <!-- /.col-lg-6 -->
+                <div class="col-lg-4">
+                <div class="" id="markup">
+  <div class="well">
+    <h4>Markup Help</h4>
+    <b>Want to add fany text effects to your post?</b>
+    <p>Line Break: <code>&lt;br&gt;</code> place in location of the intended line break.</p>
+    <p>Bold Text: <code>&lt;b&gt;</code> at the beginning and <code>&lt;/b&gt;</code> and the end of the bolded section. </p>
+    <p>Header Text: <code>&lt;h1&gt;</code> at the beginning and <code>&lt;/h1&gt;</code> and the end of the header section. </p>
+    <p>Paragraph Text: <code>&lt;p&gt;</code> at the beginning and <code>&lt;/p&gt;</code> and the end of the paragraph. </p>  
+    <p>List: <code>&lt;li&gt;</code> at the beginning and <code>&lt;/li&gt;</code> and the end of the list entry. You can add as many list entries you want. </p>
   </div>
 </div>
-</form>
-					
-                </div>
-                <!-- /.col-lg-6 -->
+</div>
+</div>
             </div>
             <!-- /.row -->
            <?php require '../footer.php'; ?>
