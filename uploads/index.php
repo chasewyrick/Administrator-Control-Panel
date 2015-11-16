@@ -4,10 +4,38 @@ if($_SESSION["user_name"]) {
 	
 require '../settings.php';
 
+$target_dir = "./files/";
+$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+$uploadOk = 1;
+$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
+// Check if image file is a actual image or fake image
 if(count($_POST)>0) {
+    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+    
+        $uploadOk = 1;
+    
 
+// Check if file already exists
+if (file_exists($target_file)) {
+    $message = "Sorry, file already exists.";
+    $uploadOk = 0;
+}
+// Check file size
+if ($_FILES["fileToUpload"]["size"] > 500000) {
+    $message = "Sorry the file is too big. So it wasnt uploaded. Please use your hosting service.";
+    $uploadOk = 0;
+}
+// Check if $uploadOk is set to 0 by an error
+if ($uploadOk == 0) {
+    $message = "Sorry, your file was not uploaded.";
+// if everything is ok, try to upload file
 } else {
-echo "";
+    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+        $message = "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+    } else {
+        $message = "Sorry, your file was not uploaded.";
+    }
+}
 }
 ?>
 <!DOCTYPE html>
@@ -22,7 +50,27 @@ echo "";
     <meta name="author" content="">
 
     <title>Administrator - Dashboard</title>
-
+	<style>
+	.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+</style>
     <!-- Bootstrap Core CSS -->
     <link href="/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -71,47 +119,34 @@ echo "";
             <div class="row">
                 <div class="col-lg-10">
                     <h1 class="page-header">Uploads Management</h1>
+                    <?php echo $message; ?>
 				
 					
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-10">
-                  <form action="" method="post">
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-12 control-label" for="title">Title</label>  
-  <div class="col-md-12">
-  <input id="title" name="title" type="text" placeholder="A good title always works!" class="form-control input-md" required="">
-  <span class="help-block">Create a nice title ideally 10 to 50 characters long. </span>  
-  </div>
-</div>
-
-<!-- Textarea -->
-<div class="form-group">
-  <label class="col-md-12 control-label" for="post">Blog Post Content</label>
-  <div class="col-md-12">                     
-    <textarea class="form-control" id="post" name="post" rows = "9">Just a nice little blog post to tell people about Bananas!</textarea>
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-12 control-label" for="author">Author</label>  
-  <div class="col-md-12">
-  <input id="author" name="author" type="text" placeholder="Banana Man!" class="form-control input-md">
-  <span class="help-block">Who made this post?</span>  
-  </div>
-</div>
-
- <input type="submit" name="submit" value="Submit" class="btn btn-success btn-lg btn-block">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                    	                    		<h3 class="panel-title">Upload New File</h3>
+						
+                    </div>
+                      <div class="row">
+                <div class="col-lg-6">
+                    <div class="panel-body">
+                        <form action="" method="post" enctype="multipart/form-data">
+                            <fieldset>
+                                <div class="form-group">
+                          
+    <input id="file" type="file" name="fileToUpload" id="fileToUpload" >
+                          </div>
+                                
+                                <input type="submit" name="submit" value="Submit" class="btn btn-success btn-lg btn-block">
                             </fieldset>
                         </form>
+                                            </div>
+                </div></div>
 
-                </div>
                 <!-- /.col-lg-6 -->
             </div>
             <!-- /.row -->
