@@ -4,14 +4,13 @@ if($_SESSION["user_name"]) {
 	
 require '../settings.php';
 
-$target_dir = "./files/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 // Check if image file is a actual image or fake image
 if(count($_POST)>0) {
     $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-    
+   $target_dir = $_POST['target'];
         $uploadOk = 1;
     
 
@@ -139,6 +138,12 @@ if ($uploadOk == 0) {
                                 <div class="form-group">
                           
     <input id="file" type="file" name="fileToUpload" id="fileToUpload" >
+                          </div>
+                            <div class="form-group">
+                            	<label for="target">Target</label>
+                    
+    <input class="form-control" id="target" type="text" name="target" id="target" value="./files/">
+    <p class="help-block">Leave alone if you don't know what your doing.</p>
                           </div>
                                 
                                 <input type="submit" name="submit" value="Submit" class="btn btn-success btn-lg btn-block">
