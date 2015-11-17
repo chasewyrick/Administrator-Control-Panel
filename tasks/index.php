@@ -5,19 +5,27 @@ if($_SESSION["user_name"]) {
 require '../settings.php';
 
 if(count($_POST)>0) {
+$title = $_POST['title'];
+$detail = $_POST['detail'];
+$completion= ''.$_POST['completion'].' 9:00:00';
+
+$progress = date('Y-m-j');
+$newprogress = ''.$progress.' 9:00:00';
 // Create connection
 $conn = new mysqli($host, $mysql_user, $mysql_pass, $db);
 // Check connection
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    die("Connection failed: ". $conn->connect_error);
 } 
-mysqli_query($conn, "INSERT");
+mysqli_query($conn, "INSERT INTO `tasks` (`id`, `taskname`, `details`, `completion`, `startdate`) VALUES ('', '$title', '$detail', '$completion', '$progress')");
+
+echo $sql;
 } else {
     echo "";
 }
-$conn->close();
-?>
-}
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,27 +39,7 @@ $conn->close();
     <meta name="author" content="">
 
     <title>Administrator - Dashboard</title>
-	<style>
-	.btn-file {
-    position: relative;
-    overflow: hidden;
-}
-.btn-file input[type=file] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    font-size: 100px;
-    text-align: right;
-    filter: alpha(opacity=0);
-    opacity: 0;
-    outline: none;
-    background: white;
-    cursor: inherit;
-    display: block;
-}
-</style>
+	
     <!-- Bootstrap Core CSS -->
     <link href="/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -99,7 +87,7 @@ $conn->close();
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-10">
-                    <h1 class="page-header">Uploads Management</h1>
+                    <h1 class="page-header">Tasks Management</h1>
                     <?php echo $message; ?>
 				
 					
@@ -109,7 +97,44 @@ $conn->close();
             <!-- /.row -->
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                    	                    		<h3 class="panel-title">Upload New File</h3>
+                    	                    		<h3 class="panel-title">Current Tasks:</h3>
+						
+                    </div>
+             <div class="panel-body">
+ <?php
+// Create connection
+$conn = new mysqli($host, $mysql_user, $mysql_pass, $db);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: ". $conn->connect_error);
+} 
+$sql = "SELECT * FROM  `tasks` ORDER BY `id` DESC";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+
+    // output data of each row
+ while($row = $result->fetch_assoc()) {
+$date2 = strtotime($row['completion']);
+$date1 = strtotime($row['startdate']);
+
+$today = time();
+$dateDiff = $date2 - $date1;
+$dateDiffForToday = $today - $date1;
+
+$percentage = ($dateDiffForToday / $dateDiff) * 100;
+$percentageRounded = round($percentage);
+
+echo $percentageRounded . '%';
+
+  echo '<div><p><strong>'.$row["taskname"].'</strong><span class="pull-right text-muted">Aim Date: '. $row["completion"].'</span></p><div class="progress progress-striped active"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="' . $percentageRounded . '" aria-valuemin="0" aria-valuemax="100" style="width: '. $percentageRounded .'%"><span class="sr-only">'. $percentageRounded .'% Complete (success)</span></div></div><span class="text-muted">'. $row["details"].'</span><div class="row"><div class="col-md-4"><a href="./delete?id='.$row["id"].'" class="pull-right text-muted">Delete</a> </div></div></div>';
+    }
+} else {
+    echo "No Blog Posts";
+}
+$conn->close();
+?></div></div><div class="panel panel-default">
+                    <div class="panel-heading">
+                    	                    		<h3 class="panel-title">Create New Task</h3>
 						
                     </div>
                       <div class="row">
@@ -118,25 +143,21 @@ $conn->close();
                         <form action="" method="post" enctype="multipart/form-data">
                             <fieldset>
                              <div class="form-group">
-                            	<label for="taskname">Task Name</label>
-    <input class="form-control" id="taskname" type="text" name="taskname" id="taskname" placeholder="Fix Client Menu">
+                            	<label for="title">Task Name</label>
+    <input class="form-control" id="title" type="text" name="title" id="title" placeholder="Fix Client Menu">
     <p class="help-block">How far are you now? Don't include % sign. I do that for you.</p>
                           </div> 
                           <div class="form-group">
-                            	<label for="details">Extra Detail</label>
-    <input class="form-control" id="details" type="text" name="details" id="details" placeholder="Fix client menu and then check they are happy with changes.">
+                            	<label for="detail">Extra Detail</label>
+    <input class="form-control" id="detail" type="text" name="detail" id="detail" placeholder="Fix client menu and then check they are happy with changes.">
     <p class="help-block">How far are you now? Don't include % sign. I do that for you.</p>
                           </div> 
                           <div class="form-group">
-                            	<label for="compleation">Target Date</label>
-    <input class="form-control" id="compleation" type="text" name="compleation" id="compleation" placeholder="24/10/15">
-    <p class="help-block">When should this task be finished.</p>
+                            	<label for="completion">Target Date</label>
+    <input class="form-control" id="completion" type="text" name="completion" id="completion" placeholder="24/10/15">
+    <p class="help-block">When should this task be finished. Use this format: YEAR (0000)- MONTH (1-12) - DAY (1-31)</p>
                           </div>
-                            <div class="form-group">
-                            	<label for="progress">Progress</label>
-    <input class="form-control" id="progress" type="number" name="progress" id="progress" value="0">
-    <p class="help-block">How far are you now? Don't include % sign. I do that for you.</p>
-                          </div>
+                            
                                 
                                 <input type="submit" name="submit" value="Submit" class="btn btn-success btn-lg btn-block">
                             </fieldset>
