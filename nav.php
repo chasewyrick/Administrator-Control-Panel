@@ -13,7 +13,6 @@
     <link href="./assets/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
     <link href="/dist/css/admin.css" rel="stylesheet">
     <link href="/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesnt work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -31,6 +30,28 @@
 		$(".se-pre-con").fadeOut("slow");;
 	});
 	</script>
+	<script>
+	function toggleFullScreen() {
+  if ((document.fullScreenElement && document.fullScreenElement !== null) ||    
+   (!document.mozFullScreen && !document.webkitIsFullScreen)) {
+    if (document.documentElement.requestFullScreen) {  
+      document.documentElement.requestFullScreen();  
+    } else if (document.documentElement.mozRequestFullScreen) {  
+      document.documentElement.mozRequestFullScreen();  
+    } else if (document.documentElement.webkitRequestFullScreen) {  
+      document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);  
+    }  
+  } else {  
+    if (document.cancelFullScreen) {  
+      document.cancelFullScreen();  
+    } else if (document.mozCancelFullScreen) {  
+      document.mozCancelFullScreen();  
+    } else if (document.webkitCancelFullScreen) {  
+      document.webkitCancelFullScreen();  
+    }  
+  }  
+}
+</script>
 </head>
 
 <div class="se-pre-con"></div>
@@ -51,6 +72,56 @@
             </div>
 
             <ul class="nav navbar-top-links navbar-right">
+            <li>
+            
+              <a href="#" onclick="toggleFullScreen()">
+                        <i class="fa fa-arrows-alt fa-fw"></i>  
+                    </a>
+            </li>
+            <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-tasks">
+                       <?php
+// Create connection
+$conn = new mysqli($host, $mysql_user, $mysql_pass, $db);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: ". $conn->connect_error);
+} 
+$sql = "SELECT * FROM  `messages` ORDER BY `id` DESC";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+
+    // output data of each row
+ while($row = $result->fetch_assoc()) {
+$date2 = strtotime($row['completion']);
+$date1 = strtotime($row['startdate']);
+
+$today = time();
+$dateDiff = $date2 - $date1;
+$dateDiffForToday = $today - $date1;
+
+$percentage = ($dateDiffForToday / $dateDiff) * 100;
+$percentageRounded = round($percentage);
+
+echo '<li><a href="/messages/"><div><strong>'.$row['name'].'</strong><span class="pull-right text-muted"><em>'.$row['date'].'</em></span></div><div><div onclick="">'.substr($row['message'], 0, 70).'..</div></div></a></li><li class="divider"></li>';
+
+    }
+} else {
+    echo "<li>No Messages</li>";
+}
+$conn->close();
+?><li>
+                            <a class="text-center" href="/tasks/">
+                                <strong>See All Messages</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-tasks -->
+                </li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-tasks fa-fw"></i>  <i class="fa fa-caret-down"></i>
@@ -90,7 +161,7 @@ echo '<li><a href="#"><div><p><strong>'.$row['taskname'].'</strong><span class="
 
     }
 } else {
-    echo "No Blog Posts";
+    echo "<li><p>No Tasks</p></li><li class='divider'></li>";
 }
 $conn->close();
 ?><li>
