@@ -126,10 +126,10 @@ $percentageRounded = round($percentage);
 
 echo $percentageRounded . '%';
 
-  echo '<div><p><strong>'.$row["taskname"].'</strong><span class="pull-right text-muted">Aim Date: '. $row["completion"].'</span></p><div class="progress progress-striped active"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="' . $percentageRounded . '" aria-valuemin="0" aria-valuemax="100" style="width: '. $percentageRounded .'%"><span class="sr-only">'. $percentageRounded .'% Complete (success)</span></div></div><span class="text-muted">'. $row["details"].'</span><div class="row"><div class="col-md-4"><a href="./delete?id='.$row["id"].'" class="pull-right text-muted">Delete</a> </div></div></div>';
+  echo '<div><p><strong>'.$row["taskname"].'</strong><span class="pull-right text-muted">Aim Date: '. $row["completion"].'</span></p><div class="progress progress-striped active"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="' . $percentageRounded . '" aria-valuemin="0" aria-valuemax="100" style="width: '. $percentageRounded .'%"><span class="sr-only">'. $percentageRounded .'% Complete (success)</span></div></div><span class="text-muted">'. $row["details"].'</span><div class="row"><div class="col-md-4"><a href="./delete.php?id='.$row["id"].'" class="pull-right text-muted">Delete</a> </div></div></div>';
     }
 } else {
-    echo "No Blog Posts";
+    echo "No Tasks";
 }
 $conn->close();
 ?></div></div><div class="panel panel-default">
