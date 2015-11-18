@@ -142,7 +142,7 @@ if ($uploadOk == 0) {
                             <div class="form-group">
                             	<label for="target">Target</label>
                     
-    <input class="form-control" id="target" type="text" name="target" id="target" value="./files/">
+    <input class="form-control" id="target" type="text" name="target" id="target" value="./uploaded/">
     <p class="help-block">Leave alone if you don't know what your doing.</p>
                           </div>
                                 
