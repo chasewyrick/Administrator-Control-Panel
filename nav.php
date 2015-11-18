@@ -180,6 +180,8 @@ $conn->close();
                     <ul class="dropdown-menu dropdown-user">
                         <li><a href="/password"><i class="fa fa-key fa-fw"></i>Change Password</a>
                         </li>
+                        <li><a href="/settings"><i class="fa fa-cog fa-fw"></i>Change Settings</a>
+                        </li>
                  
                         <li class="divider"></li>
                         <li><a href="/logout.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
