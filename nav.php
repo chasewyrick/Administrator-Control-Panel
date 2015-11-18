@@ -32,9 +32,9 @@
 	</script>
 	
 	<script>
-$(window).on("unload",function(event) {
-  
-    $(".se-pre-con").fadeOut("slow");;
+	$(window).unload(function(){
+    alert("Goodbye!");
+});
 	</script>
 	
 	<script>
@@ -223,6 +223,9 @@ $conn->close();
                         </li>
                          <li>
                         <a href="/tasks"><i class="fa fa-tasks fa-fw"></i> Tasks</a>
+                        </li>
+                        <li>
+                        <a href="/uploads"><i class="fa fa-upload fa-fw"></i> Uploads</a>
                         </li>
                         </ul>
                 </div>
