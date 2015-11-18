@@ -28,8 +28,15 @@
 	$(window).load(function() {
 		// Animate loader off screen
 		$(".se-pre-con").fadeOut("slow");;
-	});
+	}); 
 	</script>
+	
+	<script>
+$(window).on("unload",function(event) {
+  
+    $(".se-pre-con").fadeOut("slow");;
+	</script>
+	
 	<script>
 	function toggleFullScreen() {
   if ((document.fullScreenElement && document.fullScreenElement !== null) ||    
