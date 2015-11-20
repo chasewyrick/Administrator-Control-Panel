@@ -18,7 +18,7 @@ if ($conn->connect_error) {
     die("Connection failed: ". $conn->connect_error);
 } 
 mysqli_query($conn, "INSERT INTO `tasks` (`id`, `taskname`, `details`, `completion`, `startdate`) VALUES ('', '$title', '$detail', '$completion', '$progress')");
-
+$message = "success";
 echo $sql;
 } else {
     echo "";
@@ -88,7 +88,11 @@ echo $sql;
             <div class="row">
                 <div class="col-lg-10">
                     <h1 class="page-header">Tasks Management</h1>
-                    <?php echo $message; ?>
+                    <?php 
+                    if($message == 'success'){
+                    echo '<div class="alert alert-info" role="alert"><i class="fa fa-thumbs-o-up""></i> Sucess. Task Created.<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>';
+           		}
+                    ?>
 				
 					
                 </div>

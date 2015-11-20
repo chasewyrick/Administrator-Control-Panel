@@ -1,0 +1,8 @@
+[15-Nov-2015 10:07:35 Europe/Moscow] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'laughin1'@'176.31.10.37' (using password: NO) in /home/laughin1/public_html/admin/messages/index.php on line 79
+[17-Nov-2015 09:49:18 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 106
+[18-Nov-2015 01:26:59 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 106
+[18-Nov-2015 05:11:12 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 119
+[18-Nov-2015 06:38:23 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 145
+[18-Nov-2015 07:03:41 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 09:45:51 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 09:45:56 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113

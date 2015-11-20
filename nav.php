@@ -225,7 +225,18 @@ $conn->close();
                         <a href="/tasks"><i class="fa fa-tasks fa-fw"></i> Tasks</a>
                         </li>
                         <li>
-                        <a href="/uploads"><i class="fa fa-upload fa-fw"></i> Uploads</a>
+                            <a href="#"><i class="fa fa-upload fa-fw"></i> Uploads<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                            
+                        <li class="divider"></li>
+                        <li>
+                                    <a href="/uploads/">New Upload <i class="fa fa-cloud-upload fa-fw"></i></a>
+                                </li>
+                                <li>
+                                    <a href="/uploads/files/">Files <i class="fa fa-file fa-fw"></i></a>
+                                </li>
+                                
+                            </ul>
                         </li>
                         </ul>
                 </div>

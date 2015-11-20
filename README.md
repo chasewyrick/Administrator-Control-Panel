@@ -7,7 +7,7 @@
 
 2. Messaging system. 
 
-3. Upload files to a specific directory.
+3. Upload files to a specific directory. - In the works.
 
 4. Change password.
 
@@ -85,11 +85,9 @@ NOTE: Seeing I cannot see your page structures and which pages you have if you w
 
 16. Any issues create a new issue in the issues section and I will assist the best I can. 
 
-<i>To get blog to work:</i>
-Simply copy and paste the blog section in the code.php file in the utilities folder to where you want posts to show. That is it. The system will do the rest.
-
 NOTE: I am continually changing things on this repo. When I feel a release is in order I will release a new version in the releases. Otherwise the master branch is always changing and if you download it as a .zip file I do not guarantee it to work as intended. So do so at your own risk.   
 
-Version: 2.5.0 Pre-Release 2
+Version: 2.5 Release
 
 If there are any issues please email me: me@laughingquoll.net
+

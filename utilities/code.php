@@ -24,59 +24,6 @@ mail("$administrationemail","New Message From Website",$msg);
  Print "Something went wrong please go back!";
  }
  ?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head><meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
-
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Factats - Dashboard</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- MetisMenu CSS -->
-    <link href="/assets/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
-
-    <!-- Timeline CSS -->
-    <link href="/dist/css/timeline.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="/dist/css/factcats.css" rel="stylesheet">
-
-    <!-- Morris Charts CSS -->
-    <link href="/assets/morrisjs/morris.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesnt work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-<script>
-//paste this code under head tag or in a seperate js file.
-	// Wait for window load
-	$(window).load(function() {
-		// Animate loader off screen
-		$(".se-pre-con").fadeOut("slow");;
-	});
-</script>
-
-<div class="se-pre-con"></div><center><br><br><br><h2>Success!</h2>
-<a href="http://factcats.org/" class="btn btn-success">Back to Site</a></center>
 
 
 /* Display your page edits on the website. */
@@ -101,7 +48,9 @@ while($row = mysqli_fetch_assoc($result)){
 echo "".$row['name of section']."";
 ?>
 
+
 /* Blog Page: - Paste this where you want blog posts to go.*/
+
  <?php
 // Create connection
 $conn = new mysqli($host, $mysql_user, $mysql_pass, $db);

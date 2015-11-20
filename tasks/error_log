@@ -1,0 +1,156 @@
+[16-Nov-2015 09:47:20 Europe/Moscow] PHP Fatal error:  Call to a member function close() on a non-object in /home/laughin1/public_html/admin/tasks/index.php on line 22
+[16-Nov-2015 09:48:18 Europe/Moscow] PHP Parse error:  syntax error, unexpected '}' in /home/laughin1/public_html/admin/tasks/index.php on line 184
+[16-Nov-2015 09:48:28 Europe/Moscow] PHP Parse error:  syntax error, unexpected '}' in /home/laughin1/public_html/admin/tasks/index.php on line 184
+[16-Nov-2015 09:48:29 Europe/Moscow] PHP Parse error:  syntax error, unexpected '}' in /home/laughin1/public_html/admin/tasks/index.php on line 184
+[16-Nov-2015 09:51:07 Europe/Moscow] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/laughin1/public_html/admin/tasks/index.php on line 19
+[16-Nov-2015 09:52:03 Europe/Moscow] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/laughin1/public_html/admin/tasks/index.php on line 19
+[16-Nov-2015 10:03:30 Europe/Moscow] PHP Parse error:  syntax error, unexpected '>' in /home/laughin1/public_html/admin/tasks/index.php on line 132
+[16-Nov-2015 10:04:54 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'pull' (T_STRING), expecting ',' or ';' in /home/laughin1/public_html/admin/tasks/index.php on line 129
+[16-Nov-2015 10:07:09 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'INSERT' (T_STRING) in /home/laughin1/public_html/admin/tasks/index.php on line 18
+[16-Nov-2015 10:08:24 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'SELECT' (T_STRING) in /home/laughin1/public_html/admin/tasks/index.php on line 124
+[16-Nov-2015 10:09:26 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'SELECT' (T_STRING) in /home/laughin1/public_html/admin/tasks/index.php on line 124
+[16-Nov-2015 10:23:33 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/laughin1/public_html/admin/tasks/index.php on line 134
+[16-Nov-2015 10:23:56 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/laughin1/public_html/admin/tasks/index.php on line 134
+[16-Nov-2015 11:37:14 Europe/Moscow] PHP Parse error:  syntax error, unexpected '<' in /home/laughin1/public_html/admin/tasks/index.php on line 140
+[17-Nov-2015 00:24:53 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/laughin1/public_html/admin/tasks/index.php on line 144
+[17-Nov-2015 00:24:53 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/laughin1/public_html/admin/tasks/index.php on line 144
+[17-Nov-2015 00:54:50 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'g' (T_STRING) in /home/laughin1/public_html/admin/tasks/index.php on line 135
+[17-Nov-2015 00:54:50 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'g' (T_STRING) in /home/laughin1/public_html/admin/tasks/index.php on line 135
+[17-Nov-2015 00:55:11 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'g' (T_STRING) in /home/laughin1/public_html/admin/tasks/index.php on line 135
+[17-Nov-2015 00:55:11 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'g' (T_STRING) in /home/laughin1/public_html/admin/tasks/index.php on line 135
+[17-Nov-2015 00:55:47 Europe/Moscow] PHP Parse error:  syntax error, unexpected ':' in /home/laughin1/public_html/admin/tasks/index.php on line 135
+[17-Nov-2015 00:55:48 Europe/Moscow] PHP Parse error:  syntax error, unexpected ':' in /home/laughin1/public_html/admin/tasks/index.php on line 135
+[17-Nov-2015 00:57:34 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 143
+[17-Nov-2015 01:53:03 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 143
+[17-Nov-2015 01:55:45 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 141
+[17-Nov-2015 01:59:15 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 140
+[17-Nov-2015 02:21:12 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 145
+[17-Nov-2015 02:22:10 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 145
+[17-Nov-2015 02:22:29 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 144
+[17-Nov-2015 02:24:56 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 144
+[17-Nov-2015 02:25:51 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 146
+[17-Nov-2015 02:26:39 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 144
+[17-Nov-2015 02:53:39 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 144
+[17-Nov-2015 03:42:38 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 142
+[17-Nov-2015 03:51:08 Europe/Moscow] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/laughin1/public_html/admin/tasks/index.php on line 10
+[17-Nov-2015 03:51:09 Europe/Moscow] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/laughin1/public_html/admin/tasks/index.php on line 10
+[17-Nov-2015 04:00:12 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:03:29 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:03:29 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:04:16 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:04:16 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:04:48 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:04:48 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:07:18 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:07:18 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:07:42 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:07:42 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:10:16 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:10:16 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:10:55 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:10:55 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:11:29 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:11:29 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:11:29 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:11:39 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:11:39 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:11:39 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:12:19 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:12:19 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:12:19 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:12:28 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:12:28 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:12:28 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:12:28 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:13:43 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:13:43 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:13:43 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:13:43 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:13:47 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:13:47 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:13:47 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:13:47 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:14:02 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:14:02 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:14:02 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:14:56 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:14:56 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:14:56 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:15:12 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:15:12 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:15:12 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 04:18:38 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 05:11:08 Europe/Moscow] PHP Parse error:  syntax error, unexpected '}' in /home/laughin1/public_html/admin/tasks/index.php on line 200
+[17-Nov-2015 05:11:09 Europe/Moscow] PHP Parse error:  syntax error, unexpected '}' in /home/laughin1/public_html/admin/tasks/index.php on line 200
+[17-Nov-2015 05:26:52 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/tasks/index.php on line 123
+[17-Nov-2015 09:31:04 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 79
+[17-Nov-2015 09:32:00 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 79
+[17-Nov-2015 09:32:26 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 79
+[17-Nov-2015 09:34:41 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 79
+[17-Nov-2015 09:37:36 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 104
+[17-Nov-2015 09:39:05 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 107
+[17-Nov-2015 09:39:21 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 106
+[17-Nov-2015 09:39:52 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 107
+[17-Nov-2015 09:40:00 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 107
+[17-Nov-2015 09:40:41 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 107
+[17-Nov-2015 09:45:55 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 108
+[17-Nov-2015 09:49:22 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 106
+[17-Nov-2015 10:54:26 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 106
+[17-Nov-2015 10:54:30 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/laughin1/public_html/admin/tasks/delete.php:1) in /home/laughin1/public_html/admin/tasks/delete.php on line 11
+[17-Nov-2015 10:55:21 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/laughin1/public_html/admin/tasks/delete.php:1) in /home/laughin1/public_html/admin/tasks/delete.php on line 11
+[17-Nov-2015 10:58:28 Europe/Moscow] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/laughin1/public_html/admin/tasks/delete.php:1) in /home/laughin1/public_html/admin/tasks/delete.php on line 2
+[17-Nov-2015 10:58:30 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 106
+[17-Nov-2015 11:04:52 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 106
+[17-Nov-2015 11:06:05 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 106
+[17-Nov-2015 11:06:14 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 106
+[17-Nov-2015 11:07:08 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'divider' (T_STRING), expecting ',' or ';' in /home/laughin1/public_html/admin/nav.php on line 164
+[17-Nov-2015 11:07:26 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 106
+[17-Nov-2015 11:47:43 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 106
+[17-Nov-2015 11:48:09 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 106
+[17-Nov-2015 11:48:30 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 106
+[17-Nov-2015 11:49:17 Europe/Moscow] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/laughin1/public_html/admin/tasks/delete.php:1) in /home/laughin1/public_html/admin/tasks/delete.php on line 2
+[17-Nov-2015 11:49:19 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 106
+[17-Nov-2015 11:49:25 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 106
+[17-Nov-2015 11:49:31 Europe/Moscow] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/laughin1/public_html/admin/tasks/delete.php:1) in /home/laughin1/public_html/admin/tasks/delete.php on line 2
+[17-Nov-2015 11:50:33 Europe/Moscow] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/laughin1/public_html/admin/tasks/delete.php:1) in /home/laughin1/public_html/admin/tasks/delete.php on line 2
+[17-Nov-2015 11:52:27 Europe/Moscow] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/laughin1/public_html/admin/tasks/delete.php:1) in /home/laughin1/public_html/admin/tasks/delete.php on line 2
+[18-Nov-2015 05:44:21 Europe/Moscow] PHP Parse error:  syntax error, unexpected end of file in /home/laughin1/public_html/admin/tasks/index.php on line 116
+[18-Nov-2015 05:44:21 Europe/Moscow] PHP Parse error:  syntax error, unexpected end of file in /home/laughin1/public_html/admin/tasks/index.php on line 116
+[18-Nov-2015 05:46:30 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[18-Nov-2015 05:46:34 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[18-Nov-2015 06:08:53 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[18-Nov-2015 09:53:30 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[18-Nov-2015 09:55:11 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[18-Nov-2015 09:56:05 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[18-Nov-2015 09:56:09 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[18-Nov-2015 09:56:20 Europe/Moscow] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/laughin1/public_html/admin/tasks/delete.php:1) in /home/laughin1/public_html/admin/tasks/delete.php on line 2
+[18-Nov-2015 09:56:23 Europe/Moscow] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/laughin1/public_html/admin/tasks/delete.php:1) in /home/laughin1/public_html/admin/tasks/delete.php on line 2
+[18-Nov-2015 09:56:26 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[18-Nov-2015 09:57:03 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[18-Nov-2015 09:58:55 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[18-Nov-2015 09:58:59 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[18-Nov-2015 09:59:12 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[18-Nov-2015 10:09:55 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[18-Nov-2015 10:39:40 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[18-Nov-2015 10:39:49 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[18-Nov-2015 10:47:23 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[18-Nov-2015 10:50:06 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[18-Nov-2015 10:53:53 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[18-Nov-2015 10:56:29 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[18-Nov-2015 11:08:40 Europe/Moscow] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/laughin1/public_html/admin/tasks/delete.php:1) in /home/laughin1/public_html/admin/tasks/delete.php on line 2
+[18-Nov-2015 11:14:04 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[18-Nov-2015 11:14:37 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[18-Nov-2015 11:14:47 Europe/Moscow] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/laughin1/public_html/admin/tasks/delete.php:1) in /home/laughin1/public_html/admin/tasks/delete.php on line 2
+[18-Nov-2015 11:14:49 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[18-Nov-2015 11:14:55 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[18-Nov-2015 11:17:01 Europe/Moscow] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/laughin1/public_html/admin/tasks/delete.php:1) in /home/laughin1/public_html/admin/tasks/delete.php on line 2
+[18-Nov-2015 11:17:19 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[18-Nov-2015 11:17:29 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[18-Nov-2015 11:17:32 Europe/Moscow] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/laughin1/public_html/admin/tasks/delete.php:1) in /home/laughin1/public_html/admin/tasks/delete.php on line 2
+[18-Nov-2015 11:17:55 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[18-Nov-2015 11:18:03 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[18-Nov-2015 11:18:06 Europe/Moscow] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/laughin1/public_html/admin/tasks/delete.php:1) in /home/laughin1/public_html/admin/tasks/delete.php on line 2
+[18-Nov-2015 11:22:40 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 09:46:19 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 09:46:36 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 09:47:13 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113

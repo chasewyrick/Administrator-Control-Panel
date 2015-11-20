@@ -1,0 +1,136 @@
+[19-Nov-2015 02:02:48 Europe/Moscow] PHP Warning:  require(../settings.php): failed to open stream: No such file or directory in /home/laughin1/public_html/admin/uploads/files/index.php on line 5
+[19-Nov-2015 02:02:48 Europe/Moscow] PHP Warning:  require(../settings.php): failed to open stream: No such file or directory in /home/laughin1/public_html/admin/uploads/files/index.php on line 5
+[19-Nov-2015 02:02:48 Europe/Moscow] PHP Fatal error:  require(): Failed opening required '../settings.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/laughin1/public_html/admin/uploads/files/index.php on line 5
+[19-Nov-2015 02:02:48 Europe/Moscow] PHP Warning:  require(../settings.php): failed to open stream: No such file or directory in /home/laughin1/public_html/admin/uploads/files/index.php on line 5
+[19-Nov-2015 02:02:48 Europe/Moscow] PHP Warning:  require(../settings.php): failed to open stream: No such file or directory in /home/laughin1/public_html/admin/uploads/files/index.php on line 5
+[19-Nov-2015 02:02:48 Europe/Moscow] PHP Fatal error:  require(): Failed opening required '../settings.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/laughin1/public_html/admin/uploads/files/index.php on line 5
+[19-Nov-2015 02:03:37 Europe/Moscow] PHP Warning:  require(../nav.php): failed to open stream: No such file or directory in /home/laughin1/public_html/admin/uploads/files/index.php on line 83
+[19-Nov-2015 02:03:37 Europe/Moscow] PHP Warning:  require(../nav.php): failed to open stream: No such file or directory in /home/laughin1/public_html/admin/uploads/files/index.php on line 83
+[19-Nov-2015 02:03:37 Europe/Moscow] PHP Fatal error:  require(): Failed opening required '../nav.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/laughin1/public_html/admin/uploads/files/index.php on line 83
+[19-Nov-2015 02:04:33 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 02:14:10 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 02:14:10 Europe/Moscow] PHP Warning:  opendir(/uploaded): failed to open dir: No such file or directory in /home/laughin1/public_html/admin/uploads/files/index.php on line 102
+[19-Nov-2015 02:14:37 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/laughin1/public_html/admin/uploads/files/index.php on line 103
+[19-Nov-2015 02:14:37 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/laughin1/public_html/admin/uploads/files/index.php on line 103
+[19-Nov-2015 02:14:56 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 02:14:56 Europe/Moscow] PHP Warning:  opendir(/uploaded): failed to open dir: No such file or directory in /home/laughin1/public_html/admin/uploads/files/index.php on line 102
+[19-Nov-2015 02:14:56 Europe/Moscow] PHP Warning:  opendir(/uploaded): failed to open dir: No such file or directory in /home/laughin1/public_html/admin/uploads/files/index.php on line 103
+[19-Nov-2015 02:35:44 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 02:35:45 Europe/Moscow] PHP Warning:  opendir(/uploads/uploaded): failed to open dir: No such file or directory in /home/laughin1/public_html/admin/uploads/files/index.php on line 103
+[19-Nov-2015 05:16:15 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 05:16:21 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 06:04:23 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 06:05:11 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 06:05:11 Europe/Moscow] PHP Warning:  opendir(/upload/uploaded): failed to open dir: No such file or directory in /home/laughin1/public_html/admin/uploads/files/index.php on line 102
+[19-Nov-2015 06:08:17 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 06:08:33 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 06:10:16 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 06:11:54 Europe/Moscow] PHP Parse error:  syntax error, unexpected '<' in /home/laughin1/public_html/admin/uploads/files/index.php on line 105
+[19-Nov-2015 06:11:54 Europe/Moscow] PHP Parse error:  syntax error, unexpected '<' in /home/laughin1/public_html/admin/uploads/files/index.php on line 105
+[19-Nov-2015 06:12:25 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 06:12:47 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 06:15:42 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 06:16:36 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 06:17:18 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 06:17:47 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 06:18:24 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 06:18:43 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 06:19:40 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 06:20:11 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 06:20:37 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 06:21:51 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 06:22:21 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 08:10:11 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 08:10:18 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 08:10:18 Europe/Moscow] PHP Warning:  filesize(): stat failed for test2 in /home/laughin1/public_html/admin/uploads/files/index.php on line 105
+[19-Nov-2015 08:10:18 Europe/Moscow] PHP Warning:  filesize(): stat failed for testfile.file in /home/laughin1/public_html/admin/uploads/files/index.php on line 105
+[19-Nov-2015 08:14:30 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 08:14:30 Europe/Moscow] PHP Warning:  filesize(): stat failed for test2 in /home/laughin1/public_html/admin/uploads/files/index.php on line 105
+[19-Nov-2015 08:14:30 Europe/Moscow] PHP Warning:  filesize(): stat failed for testfile.file in /home/laughin1/public_html/admin/uploads/files/index.php on line 105
+[19-Nov-2015 08:21:08 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 08:21:08 Europe/Moscow] PHP Warning:  filesize(): stat failed for test2 in /home/laughin1/public_html/admin/uploads/files/index.php on line 105
+[19-Nov-2015 08:21:08 Europe/Moscow] PHP Warning:  filesize(): stat failed for testfile.file in /home/laughin1/public_html/admin/uploads/files/index.php on line 105
+[19-Nov-2015 08:21:40 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 08:23:36 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 08:30:53 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 08:32:36 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 08:32:42 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 08:33:02 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 08:37:57 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 08:38:37 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 08:42:49 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 08:44:17 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 08:52:26 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 08:52:26 Europe/Moscow] PHP Warning:  filesize(): stat failed for test.php in /home/laughin1/public_html/admin/uploads/files/index.php on line 104
+[19-Nov-2015 08:55:24 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 08:55:24 Europe/Moscow] PHP Warning:  filesize(): stat failed for test.php in /home/laughin1/public_html/admin/uploads/files/index.php on line 104
+[19-Nov-2015 08:55:50 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 08:55:50 Europe/Moscow] PHP Warning:  filesize(): stat failed for test.php in /home/laughin1/public_html/admin/uploads/files/index.php on line 104
+[19-Nov-2015 11:30:35 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[19-Nov-2015 11:30:35 Europe/Moscow] PHP Warning:  filesize(): stat failed for test.php in /home/laughin1/public_html/admin/uploads/files/index.php on line 104
+[20-Nov-2015 01:24:03 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 01:24:03 Europe/Moscow] PHP Warning:  filesize(): stat failed for test.php in /home/laughin1/public_html/admin/uploads/files/index.php on line 104
+[20-Nov-2015 01:24:03 Europe/Moscow] PHP Warning:  filesize(): stat failed for Facetime.png in /home/laughin1/public_html/admin/uploads/files/index.php on line 104
+[20-Nov-2015 01:25:04 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 01:25:44 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 01:25:47 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 01:35:20 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 01:35:42 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 01:36:20 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 06:19:44 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 06:20:42 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 06:31:44 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 06:54:17 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 07:02:09 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 07:02:50 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 07:04:10 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 07:04:37 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 07:05:32 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 07:06:37 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 07:07:09 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 07:08:05 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 07:10:48 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 07:12:47 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 07:13:11 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 07:13:33 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 07:16:36 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 09:22:01 Europe/Moscow] PHP Parse error:  syntax error, unexpected end of file in /home/laughin1/public_html/admin/uploads/files/index.php on line 160
+[20-Nov-2015 09:22:49 Europe/Moscow] PHP Parse error:  syntax error, unexpected end of file in /home/laughin1/public_html/admin/uploads/files/index.php on line 160
+[20-Nov-2015 09:26:37 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 09:35:02 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 09:41:48 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 09:47:46 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 12:13:33 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 12:23:09 Europe/Moscow] PHP Parse error:  syntax error, unexpected '<' in /home/laughin1/public_html/admin/uploads/files/index.php on line 7
+[20-Nov-2015 12:23:44 Europe/Moscow] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/laughin1/public_html/admin/uploads/files/index.php on line 10
+[20-Nov-2015 12:25:10 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 12:25:17 Europe/Moscow] PHP Warning:  unlink(./uploaded/): Is a directory in /home/laughin1/public_html/admin/uploads/files/index.php on line 10
+[20-Nov-2015 12:25:17 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 12:25:46 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 12:25:49 Europe/Moscow] PHP Warning:  unlink(./uploaded/): Is a directory in /home/laughin1/public_html/admin/uploads/files/index.php on line 10
+[20-Nov-2015 12:25:49 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[21-Nov-2015 01:20:41 Europe/Moscow] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/laughin1/public_html/admin/uploads/files/index.php on line 125
+[21-Nov-2015 01:21:02 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[21-Nov-2015 01:21:27 Europe/Moscow] PHP Warning:  unlink(./uploaded/): Is a directory in /home/laughin1/public_html/admin/uploads/files/index.php on line 10
+[21-Nov-2015 01:21:27 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[21-Nov-2015 01:21:30 Europe/Moscow] PHP Warning:  unlink(./uploaded/): Is a directory in /home/laughin1/public_html/admin/uploads/files/index.php on line 10
+[21-Nov-2015 01:21:30 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[21-Nov-2015 01:21:48 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[21-Nov-2015 01:21:51 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[21-Nov-2015 01:22:27 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[21-Nov-2015 01:23:49 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[21-Nov-2015 01:26:11 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[21-Nov-2015 01:26:53 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[21-Nov-2015 01:27:06 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[21-Nov-2015 01:27:41 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[21-Nov-2015 01:28:03 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[21-Nov-2015 01:28:22 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[21-Nov-2015 01:28:36 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[21-Nov-2015 01:29:29 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[21-Nov-2015 01:29:49 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[21-Nov-2015 01:30:08 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[21-Nov-2015 01:31:16 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[21-Nov-2015 01:33:25 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[21-Nov-2015 01:38:17 Europe/Moscow] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/laughin1/public_html/admin/uploads/files/index.php on line 143
+[21-Nov-2015 01:38:40 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[21-Nov-2015 01:40:31 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113

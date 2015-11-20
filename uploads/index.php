@@ -4,35 +4,39 @@ if($_SESSION["user_name"]) {
 	
 require '../settings.php';
 
+$target_dir = "./files/uploaded/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 // Check if image file is a actual image or fake image
-if(count($_POST)>0) {
+if(isset($_POST["submit"])) {
     $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-   $target_dir = $_POST['target'];
+    if($check !== false) {
+        echo "File is an image - " . $check["mime"] . ".";
         $uploadOk = 1;
-    
+    } else {
+       
+        $uploadOk = 1;
+    }
 
 // Check if file already exists
 if (file_exists($target_file)) {
-    $message = "Sorry, file already exists.";
+    echo "Sorry, file already exists.";
     $uploadOk = 0;
 }
 // Check file size
-if ($_FILES["fileToUpload"]["size"] > 500000) {
-    $message = "Sorry the file is too big. So it wasnt uploaded. Please use your hosting service.";
-    $uploadOk = 0;
-}
+
+// Allow certain file formats
+
 // Check if $uploadOk is set to 0 by an error
 if ($uploadOk == 0) {
-    $message = "Sorry, your file was not uploaded.";
+    echo "Sorry, your file was not uploaded.";
 // if everything is ok, try to upload file
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-        $message = "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
     } else {
-        $message = "Sorry, your file was not uploaded.";
+        echo "Sorry, there was an error uploading your file.";
     }
 }
 }
@@ -142,7 +146,7 @@ if ($uploadOk == 0) {
                             <div class="form-group">
                             	<label for="target">Target</label>
                     
-    <input class="form-control" id="target" type="text" name="target" id="target" value="./uploaded/">
+    <input class="form-control" id="target" type="text" name="target" id="target" value="./files/uploaded/">
     <p class="help-block">Leave alone if you don't know what your doing.</p>
                           </div>
                                 

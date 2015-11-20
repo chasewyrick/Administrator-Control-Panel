@@ -1,0 +1,23 @@
+[15-Nov-2015 10:11:25 Europe/Moscow] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'laughin1'@'176.31.10.37' (using password: NO) in /home/laughin1/public_html/admin/blog/index.php on line 76
+[16-Nov-2015 01:49:41 Europe/Moscow] PHP Warning:  mysqli_query() expects at least 2 parameters, 1 given in /home/laughin1/public_html/admin/blog/new.php on line 13
+[16-Nov-2015 01:54:51 Europe/Moscow] PHP Warning:  mysqli_query() expects at least 2 parameters, 1 given in /home/laughin1/public_html/admin/blog/new.php on line 15
+[16-Nov-2015 01:58:03 Europe/Moscow] PHP Fatal error:  Call to a member function query() on a non-object in /home/laughin1/public_html/admin/blog/new.php on line 17
+[16-Nov-2015 01:58:03 Europe/Moscow] PHP Fatal error:  Call to a member function query() on a non-object in /home/laughin1/public_html/admin/blog/new.php on line 17
+[16-Nov-2015 04:15:06 Europe/Moscow] PHP Warning:  require(../admin/settings.php): failed to open stream: No such file or directory in /home/laughin1/public_html/admin/blog/index.php on line 5
+[16-Nov-2015 04:15:06 Europe/Moscow] PHP Warning:  require(../admin/settings.php): failed to open stream: No such file or directory in /home/laughin1/public_html/admin/blog/index.php on line 5
+[16-Nov-2015 04:15:06 Europe/Moscow] PHP Fatal error:  require(): Failed opening required '../admin/settings.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/laughin1/public_html/admin/blog/index.php on line 5
+[16-Nov-2015 04:15:06 Europe/Moscow] PHP Warning:  require(../admin/settings.php): failed to open stream: No such file or directory in /home/laughin1/public_html/admin/blog/index.php on line 5
+[16-Nov-2015 04:15:06 Europe/Moscow] PHP Warning:  require(../admin/settings.php): failed to open stream: No such file or directory in /home/laughin1/public_html/admin/blog/index.php on line 5
+[16-Nov-2015 04:15:06 Europe/Moscow] PHP Fatal error:  require(): Failed opening required '../admin/settings.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/laughin1/public_html/admin/blog/index.php on line 5
+[16-Nov-2015 04:17:55 Europe/Moscow] PHP Warning:  require(../admin/settings.php): failed to open stream: No such file or directory in /home/laughin1/public_html/admin/blog/index.php on line 5
+[16-Nov-2015 04:17:55 Europe/Moscow] PHP Warning:  require(../admin/settings.php): failed to open stream: No such file or directory in /home/laughin1/public_html/admin/blog/index.php on line 5
+[16-Nov-2015 04:17:55 Europe/Moscow] PHP Fatal error:  require(): Failed opening required '../admin/settings.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/laughin1/public_html/admin/blog/index.php on line 5
+[16-Nov-2015 04:17:56 Europe/Moscow] PHP Warning:  require(../admin/settings.php): failed to open stream: No such file or directory in /home/laughin1/public_html/admin/blog/index.php on line 5
+[16-Nov-2015 04:17:56 Europe/Moscow] PHP Warning:  require(../admin/settings.php): failed to open stream: No such file or directory in /home/laughin1/public_html/admin/blog/index.php on line 5
+[16-Nov-2015 04:17:56 Europe/Moscow] PHP Fatal error:  require(): Failed opening required '../admin/settings.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/laughin1/public_html/admin/blog/index.php on line 5
+[18-Nov-2015 05:11:19 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 119
+[18-Nov-2015 09:41:02 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[18-Nov-2015 09:41:07 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[18-Nov-2015 09:41:16 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 09:46:03 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
+[20-Nov-2015 09:46:09 Europe/Moscow] PHP Warning:  Division by zero in /home/laughin1/public_html/admin/nav.php on line 113
