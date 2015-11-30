@@ -97,21 +97,13 @@ $conn = new mysqli($host, $mysql_user, $mysql_pass, $db);
 if ($conn->connect_error) {
     die("Connection failed: ". $conn->connect_error);
 } 
-$sql = "SELECT * FROM  `messages` ORDER BY `id` DESC";
+$sql = "SELECT * FROM  `mail` ORDER BY `id` DESC";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 
     // output data of each row
  while($row = $result->fetch_assoc()) {
-$date2 = strtotime($row['completion']);
-$date1 = strtotime($row['startdate']);
 
-$today = time();
-$dateDiff = $date2 - $date1;
-$dateDiffForToday = $today - $date1;
-
-$percentage = ($dateDiffForToday / $dateDiff) * 100;
-$percentageRounded = round($percentage);
 
 echo '<li><a href="/messages/"><div><strong>'.$row['name'].'</strong><span class="pull-right text-muted"><em>'.$row['date'].'</em></span></div><div><div onclick="">'.substr($row['message'], 0, 70).'..</div></div></a></li><li class="divider"></li>';
 
@@ -121,8 +113,8 @@ echo '<li><a href="/messages/"><div><strong>'.$row['name'].'</strong><span class
 }
 $conn->close();
 ?><li>
-                            <a class="text-center" href="/tasks/">
-                                <strong>See All Messages</strong>
+                            <a class="text-center" href="/mail/">
+                                <strong>Read all Mail</strong>
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         </li>
@@ -162,6 +154,9 @@ $colour = "danger";
 $colour = "warning";
 } else {
 $colour = "success";
+}
+if($percentageRounded > 100){
+$percentageRounded = "100";
 }
 
 echo '<li><a href="#"><div><p><strong>'.$row['taskname'].'</strong><span class="pull-right text-muted">'.$percentageRounded .'% Complete</span></p><div class="progress progress-striped active"><div class="progress-bar progress-bar-'.$colour.'" role="progressbar" aria-valuenow="'.$percentageRounded .'" aria-valuemin="0" aria-valuemax="100" style="width: '.$percentageRounded .'%"><span class="sr-only">'.$percentageRounded .'% Complete ('.$colour.')</span></div></div></div></a></li><li class="divider"></li>';
@@ -216,7 +211,7 @@ $conn->close();
                             </ul>
                         </li>
                         <li>
-                        <a href="/messages"><i class="fa fa-envelope fa-fw"></i> Messages</a>
+                        <a href="/mail"><i class="fa fa-envelope fa-fw"></i> Mail</a>
                         </li>
                         <li>
                         <a href="/blog"><i class="fa fa-comment fa-fw"></i> Blog</a>
@@ -237,6 +232,9 @@ $conn->close();
                                 </li>
                                 
                             </ul>
+                        </li>
+                       <li>
+                        <a href="/users"><i class="fa fa-users fa-fw"></i> Users</a>
                         </li>
                         </ul>
                 </div>

@@ -46,7 +46,7 @@ require '../../settings.php';
 
 
 </style>
-<
+
     <!-- Bootstrap Core CSS -->
     <link href="/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 

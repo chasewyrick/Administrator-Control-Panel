@@ -62,13 +62,14 @@ if($_SESSION["user_name"]) {
 
     <div id="wrapper">
 
-<?php require '/home/laughin1/public_html/admin/nav.php'; ?>
+<?php require 'nav.php'; ?>
 
 
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">Dashboard</h1><p>Welcome <?php echo $_SESSION["user_name"]; ?>, Use the side menu to quickly access different sections of the dashboard. </p>
+                    
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -94,7 +95,7 @@ $conn = new mysqli($host, $mysql_user, $mysql_pass, $db);
 if ($conn->connect_error) {
     die("Connection failed: ". $conn->connect_error);
 } 
-$result = mysqli_query($conn, "SELECT * FROM messages");
+$result = mysqli_query($conn, "SELECT * FROM mail");
 $num_msg = mysqli_num_rows($result);
 
 $conn->close();
@@ -154,9 +155,9 @@ $conn->close();
                                     <div>
                                      <?php 
                                      if($num_msg = 1){
-                                     echo "Message"; 
+                                     echo "Email"; 
                                      } else { 
-                                     echo "Messages"; 
+                                     echo "Emails"; 
                                      }
                                      ?>
                                      </div>
@@ -346,7 +347,7 @@ if($showtasks == 1){
                   }
                   ?>
             </div>
-            <?php include '/home/laughin1/public_html/admin/footer.php'; ?>
+            <?php include 'footer.php'; ?>
         </div>
         <!-- /#page-wrapper -->
     </div>
