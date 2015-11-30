@@ -1,4 +1,5 @@
 <?php
+// File now editable via setup.php
 $host = '';
 $mysql_user = '';
 $mysql_pass = '';
