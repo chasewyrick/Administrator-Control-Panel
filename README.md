@@ -7,31 +7,25 @@
 
 2. Messaging system. 
 
-3. Upload files to a specific directory. - In the works.
+3. Upload files to a specific directory.
 
 4. Change password.
 
-5. Create to-do lists with progress bars. - In the works.
+5. Create to-do lists with progress bars.
 
-6. Plus more on the way.
+6. Fully working mail system with send, inbox and trash functionalities.
+
+7. Update notifier! Get told when new updates come! 
 
 <b>How to implement:</b>
 
-1.	Copy and paste whole .ZIP file into your public_html directory in your webserver.
+1. Extract the zip file in the root directory of your server
 
-2.	Open settings.php in edit mode and set each field as you wish. Then save it. Do not navigate to the panel via a web browser until this document is filled out. 
-Information regarding the salt field: 
-Make sure you change this. However after you create the data tables be sure not to change it or your passwords will no longer be recognized and you will need to re-install the whole system.
+2. Navigate to http://{you host name}/admin/setup.php
 
-3.	Navigate to {your website hostname}/admin/mysql.php - It will run and create the data tables
+3. Follow the promts
 
-4.	Then open {your website hostname}/admin/ and fix any errors. If there are none you can go and delete the MySQL.php file.
-
-5.  Now log into the dashboard. The username is Administrator and the default password is Banana.
-
-6.  You will need to now go and change the passcode which can be done under the user tab on your dashboard.
-
-7.	Done. Enjoy your administration control panel.
+4. Done!
 
 Your panel can be accessed like this: http://{your host name}/admin/
 
