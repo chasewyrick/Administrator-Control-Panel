@@ -85,6 +85,49 @@
                         <i class="fa fa-arrows-alt fa-fw"></i>  
                     </a>
             </li>
+           
+<li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-wrench fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-tasks">
+                        <?php
+                        include'version.php';
+    // Connection details
+$servername = "laughingquoll.net";
+$username = "laughin1_updates";
+$password = "updates";
+$dbname = "laughin1_updates";
+
+// Initiate the MySQLi connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+die("Connection failed: ". $conn->connect_error);
+} 
+$result = mysqli_query($conn, "SELECT * FROM dashboard WHERE id > $version ORDER BY ID DESC");
+if ($result->num_rows > 0) {
+
+// output data of each row
+while($row = $result->fetch_assoc()) {
+    
+echo '<li><a href="https://github.com/LaughingQuoll/Administrator-Control-Panel/releases"><div><strong>'.$row['name'].'</strong><span class="pull-right text-muted"><em>'.$row['date'].'</em></span></div><div><div onclick="">'.$row['description'].'</div><div onclick=""><b>'.$row['status'].'</b></div></div></a></li><li class="divider"></li>';
+
+}
+} else {
+    echo "<li class='text-center'> No Updates</li><li class='divider'></li>";
+}
+
+$conn->close();
+
+?><li>
+                            <a class="text-center" href="https://github.com/LaughingQuoll/Administrator-Control-Panel/releases">
+                                Check Releases <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-tasks -->
+                </li>
             <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
@@ -97,7 +140,7 @@ $conn = new mysqli($host, $mysql_user, $mysql_pass, $db);
 if ($conn->connect_error) {
     die("Connection failed: ". $conn->connect_error);
 } 
-$sql = "SELECT * FROM  `mail` ORDER BY `id` DESC";
+$sql = "SELECT * FROM  `mail` WHERE `status`='1' ORDER BY `id` DESC";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 
@@ -109,7 +152,7 @@ echo '<li><a href="/messages/"><div><strong>'.$row['name'].'</strong><span class
 
     }
 } else {
-    echo "<li>No Messages</li>";
+    echo "<li class='text-center'> No Messages</li><li class='divider'></li>";
 }
 $conn->close();
 ?><li>
@@ -163,7 +206,7 @@ echo '<li><a href="#"><div><p><strong>'.$row['taskname'].'</strong><span class="
 
     }
 } else {
-    echo "<li><p>No Tasks</p></li><li class='divider'></li>";
+    echo "<li class='text-center'> No Tasks</li><li class='divider'></li>";
 }
 $conn->close();
 ?><li>

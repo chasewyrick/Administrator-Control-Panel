@@ -63,39 +63,8 @@ require '../settings.php';
             <!-- /.row -->
         
       	<div class="row">
-      	<div class="col-md-3">
-                <div class="apanel">
-                    <div class="panel-body">
-
-                        <a href="#" class="btn btn-success btn-block m-b-md">Compose</a>
-
-                        <ul class="mailbox-list">
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-envelope"></i> Inbox
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-paper-plane"></i> Sent</a>
-                            </li>
-                           
-                        </ul>
-                        
-                        <hr>
-                        <ul class="mailbox-list">
-                            <li>
-                                <a href="#"><i class="fa fa-gears"></i> Settings</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-info-circle"></i> Support</a>
-                            </li>
-                        </ul>
-
-
-                    </div>
-
-                </div>
-            </div>
+      	
+      		<?php include 'bar.php'; ?>
             <div class="col-md-9">
         <iframe src="http://admin.laughingquoll.net/mail/mailsendform.php" width="1000" height="500" style="border:none"></iframe>
         	</div>

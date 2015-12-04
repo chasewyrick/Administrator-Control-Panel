@@ -1,22 +1,15 @@
-
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
 
 <?php require '../settings.php';
 /* Check all form inputs using check_input function */
-$name= check_input($_POST['name'], "Enter your name");
-$email= check_input($_POST['email']);
+$name= $_POST['name'];
+$email= $_POST['email'];
 $message= $_POST['message'];
 $subject= check_input($_POST['subject']);
 /* If e-mail is not valid show error message */
 if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $email))
 {
     show_error("E-mail address not valid");
-}
-
-/* If URL is not valid set $website to empty */
-if (!preg_match("/^(https?:\/\/+[\w\-]+\.[\w\-]+)/i", $website))
-{
-    $website = '';
 }
 
 /* From who and Reply to Who. */
@@ -27,6 +20,15 @@ $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
 /* Send the message using mail() function */
 mail($email, $subject, $message, $headers);
+  require '../settings.php';
+// change these things
+$date=date(r);
+	$link = mysqli_connect($host, $mysql_user, $mysql_pass);
+	mysqli_select_db($link, $db);
+        
+	mysqli_query($link, "INSERT INTO `mail` (`id`, `name`, `message`, `email`, `date`, `subject`, `status`) VALUES ('', '$name', '$message', '$email', '$date', '$subject', '3')"); 
+       
+       $message = 'Congratulations, You blog post is now live.';
 
 /* Redirect visitor to the thank you page */
 echo "<div class='se-pre-con'></div><b>Your email has been sent sucessfully!";

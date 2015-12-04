@@ -67,7 +67,7 @@ require '../settings.php';
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Inbox</h1>
+                    <h1 class="page-header">Sent</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -113,14 +113,14 @@ $conn = new mysqli($host, $mysql_user, $mysql_pass, $db);
 if ($conn->connect_error) {
     die("Connection failed: ". $conn->connect_error);
 } 
-$sql = "SELECT * FROM  `mail` WHERE `status`='1' ORDER BY `id` DESC";
+$sql = "SELECT * FROM  `mail` WHERE `status`='3' ORDER BY `id` DESC";
 $result = $conn->query($sql);
 
     // output data of each row
  while($row = $result->fetch_assoc()) {
 
 
-echo '<tr><td>'.$row['name'].'</td><td>'.$row['subject'].'</td><td>'.$row['date'].'</td><td><a href="view.php?id='.$row['ID'].'" type="link" class="btn btn-primary btn-xs">View</a><a href="tra.php?id='.$row['ID'].'" type="link" class="btn btn-danger btn-xs">Delete</a></td></tr>';
+echo '<tr><td>'.$row['name'].'</td><td>'.$row['subject'].'</td><td>'.$row['date'].'</td><td><a href="view.php?id='.$row['ID'].'" type="link" class="btn btn-primary btn-xs">View</a><a href="delete.php?id='.$row['ID'].'" type="link" class="btn btn-danger btn-xs">Delete</a></td></tr>';
 
     }
 
