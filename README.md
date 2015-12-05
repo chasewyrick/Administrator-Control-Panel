@@ -17,6 +17,14 @@
 
 7. Update notifier! Get told when new updates come! 
 
+8. Multiple Users with different permissions.
+
+9. Automatic setup!
+
+10. View uploaded files each with uniqe icon per filetype! 
+
+11. With heaps more to come!
+
 <b>How to implement:</b>
 
 1. Extract the zip file in the root directory of your server
