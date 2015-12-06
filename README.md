@@ -1,7 +1,7 @@
 <h1>Administrator Control Panel </h1> <b>(Or to simply put it... an Admin Dashboard) </b>
 <p>This is a project I created to give every developer a dashboard to use for their clients. <p>
 <p>Read this document fully before downloading or using.</p>
-<b>Key Features: </b>
+<h3>Key Features:</h3>
 
 1. Edit pages of your website.
 
@@ -25,7 +25,7 @@
 
 11. With heaps more to come!
 
-<b>How to implement:</b>
+<h3>How to implement on you server:</h3>
 
 1. Extract the zip file in the root directory of your server
 
@@ -40,13 +40,13 @@ Your panel can be accessed like this: http://{your host name}/admin/
 <h3>Implementation on your website</h3>
 <p>This tutorial gives instructions on how to add the necessary code to allow things such as messages and page editing to work.<p>
 
-<i>To get messages to function:</i>
+<i>To get mail to function:</i>
 
 You will need to copy and paste some extra code. They are in the utilities folder.
 
-Firstly create a three template page in your website directory under a messages directory with the file names index.php, reply.php, send.php. 
+Firstly create a three template page in your website directory under a mail directory with the file names index.php, reply.php, send.php. 
 
-Then copy and paste the corresponding part into the body section of your new page.
+Then copy and paste the corresponding part in the code.php file into the body section of your new page.
 
 Then go through the send.php section and modify the message as per your wishes.
 
