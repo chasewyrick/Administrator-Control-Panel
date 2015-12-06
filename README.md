@@ -93,6 +93,7 @@ The Footer.php file must not be removed or changed without direct permission of 
 The LICENCE.md file must remain in all copies / distributions of the "software" and not be modified.
 
 <h3>Disclaimer:<h3>
+
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
