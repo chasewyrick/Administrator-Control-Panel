@@ -28,8 +28,7 @@ $date=date(r);
         
 	mysqli_query($link, "INSERT INTO `mail` (`id`, `name`, `message`, `email`, `date`, `subject`, `status`) VALUES ('', '$name', '$message', '$email', '$date', '$subject', '3')"); 
        
-       $message = 'Congratulations, You blog post is now live.';
-
+     
 /* Redirect visitor to the thank you page */
 echo "<div class='se-pre-con'></div><b>Your email has been sent sucessfully!";
 exit();
