@@ -102,6 +102,8 @@ if ($result->num_rows > 0) {
     // output data of each row
  while($row = $result->fetch_assoc()) {
  $username = $row['username'];
+ 
+ $supers = $row['superuser'];
  }
  }
 
@@ -143,7 +145,7 @@ $warning2 = "";
 <form action="" method="post"> 
 <div>
 <label for="superuser">Super User?</label>
-<input value="<?php echo ''.$super; ?>" class="form-control" type="number" size="1" name="superuser" id="superuser">
+<input value="<?php echo ''.$supers; ?>" class="form-control" type="number" size="1" name="superuser" id="superuser">
 <?php
 if($user == $account){
 $warning = " <b>If you change this you may lose your superuser access!</b>";
