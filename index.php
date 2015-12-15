@@ -70,10 +70,6 @@ exit();
             <div class="col-md-4 col-md-offset-4">
                 <div class="login-panel panel panel-default">
                     <div class="panel-heading">
-                    	<?php
-                    	if($locked == 'no'){
-						}
-                    	?>
                     		<h3 class="panel-title">Sign In for Access To Secure Area</h3>
 						<h4><?php echo $message; ?></h4>
                     </div>
@@ -89,12 +85,7 @@ exit();
                                 <input type="submit" name="submit" value="Submit" class="btn btn-success btn-lg btn-block">
                             </fieldset>
                         </form>
-                        <?php
-                        if($locked == 'yes'){
-                        echo "Sorry you are locked out of the system. Please try again in";
-                        echo $timeleft;
-                    	}
-                        ?>
+                        
                     </div>
                 </div>
             </div>
