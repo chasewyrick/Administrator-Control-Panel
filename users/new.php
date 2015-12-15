@@ -120,24 +120,7 @@ $superuser = $_POST['superuser'];
  <input type="submit" name="submit" value="Submit" class="btn btn-success btn-lg btn-block">
                             </fieldset>
                         </form>
-                    </div>
-
-		
-                <!-- /.col-lg-6 -->
-                <div class="col-lg-4">
-                <div class="" id="markup">
-  <div class="well">
-    <h4>Markup Help</h4>
-    <b>Want to add fany text effects to your post?</b>
-    <p>Line Break: <code>&lt;br&gt;</code> place in location of the intended line break.</p>
-    <p>Bold Text: <code>&lt;b&gt;</code> at the beginning and <code>&lt;/b&gt;</code> and the end of the bolded section. </p>
-    <p>Header Text: <code>&lt;h1&gt;</code> at the beginning and <code>&lt;/h1&gt;</code> and the end of the header section. </p>
-    <p>Paragraph Text: <code>&lt;p&gt;</code> at the beginning and <code>&lt;/p&gt;</code> and the end of the paragraph. </p>  
-    <p>List: <code>&lt;li&gt;</code> at the beginning and <code>&lt;/li&gt;</code> and the end of the list entry. You can add as many list entries you want. </p>
-  </div>
-</div>
-</div>
-</div>
+                  </div>
             </div>
             <!-- /.row -->
            <?php require '../footer.php'; ?>
