@@ -160,7 +160,7 @@ $conn->close();
                           </div> 
                           <div class="form-group">
                             	<label for="completion">Target Date</label>
-    <input class="form-control" id="completion" type="text" name="completion" id="completion" placeholder="24/10/15">
+    <input class="form-control" id="completion" type="text" name="completion" id="completion" placeholder="2015-11-13">
     <p class="help-block">When should this task be finished. Use this format: YEAR (0000)- MONTH (1-12) - DAY (1-31)</p>
                           </div>
                             
