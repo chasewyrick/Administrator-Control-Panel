@@ -200,7 +200,7 @@ if($status == '0'){
     } else {
     ?>
     <center>
-    <iframe src="http://admin.laughingquoll.net/assets/status.php" width="1000" height="660" style="border:none; overflow-y: hidden" scrolling="no" seamless="seamless"></iframe>
+    <iframe src="./assets/status.php" width="1000" height="660" style="border:none; overflow-y: hidden" scrolling="no" seamless="seamless"></iframe>
     </center>
     <?php
     }
