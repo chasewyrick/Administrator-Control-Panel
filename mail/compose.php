@@ -66,7 +66,7 @@ require '../settings.php';
       	
       		<?php include 'bar.php'; ?>
             <div class="col-md-9">
-        <iframe src="http://admin.laughingquoll.net/mail/mailsendform.php" width="700" height="500" style="border:none"></iframe>
+        <iframe src="./mailsendform.php" width="700" height="500" style="border:none"></iframe>
         	</div>
     </div>
             <!-- /.row -->
